@@ -1,0 +1,112 @@
+{
+    "name": "CRM — baseline ruleset",
+    "description": "Sourced from bc-customer-project-template/ruleset.json. Authoritative CodeCop / AppSourceCop / PerTenantExtensionCop / LinterCop configuration. Re-sync from the base template when it changes.",
+    "rules": [
+        {
+            "id": "AS0084",
+            "action": "Hidden",
+            "justification": "PTE 50K ID range — AppSource range validation not applicable."
+        },
+        {
+            "id": "AA0214",
+            "action": "Hidden",
+            "justification": "Change the record before saving — not useful for our patterns."
+        },
+        {
+            "id": "AS0053",
+            "action": "Hidden",
+            "justification": "Project uses the PTE range."
+        },
+        {
+            "id": "AS0013",
+            "action": "Hidden",
+            "justification": "Strange behavior regarding field IDs on 50K."
+        },
+        {
+            "id": "PTE0005",
+            "action": "Hidden",
+            "justification": "Target attribute ignored when OnPrem with AppSourceCop on."
+        },
+        {
+            "id": "AS0092",
+            "action": "Hidden",
+            "justification": "App does not need applicationInsightsConnectionString."
+        },
+        {
+            "id": "AA0008",
+            "action": "Error",
+            "justification": "Procedure calls must use parentheses even with no parameters."
+        },
+        {
+            "id": "AA0073",
+            "action": "Error",
+            "justification": "Temporary variables must be Temp-prefixed."
+        },
+        {
+            "id": "AA0137",
+            "action": "Error",
+            "justification": "No unused variables."
+        },
+        {
+            "id": "AA0139",
+            "action": "Error",
+            "justification": "Don't assign a wider text into a smaller field."
+        },
+        {
+            "id": "AA0206",
+            "action": "Warning",
+            "justification": "Value assigned to a variable must be used."
+        },
+        {
+            "id": "AA0217",
+            "action": "Error",
+            "justification": "StrSubstNo format string must be a label/text constant."
+        },
+        {
+            "id": "AA0233",
+            "action": "Error",
+            "justification": "Get / FindFirst / FindLast must not be followed by Next()."
+        },
+        {
+            "id": "AL0604",
+            "action": "Warning",
+            "justification": "Use of implicit 'with'."
+        },
+        {
+            "id": "AL0606",
+            "action": "Error",
+            "justification": "The 'with' statement is deprecated for cloud development."
+        },
+        {
+            "id": "LC0026",
+            "action": "Hidden",
+            "justification": "ToolTip 'Specifies' convention — noisy."
+        },
+        {
+            "id": "LC0036",
+            "action": "Hidden"
+        },
+        {
+            "id": "LC0068",
+            "action": "Hidden"
+        },
+        {
+            "id": "LC0063",
+            "action": "Hidden"
+        },
+        {
+            "id": "LC0084",
+            "action": "Hidden"
+        },
+        {
+            "id": "LC0062",
+            "action": "Hidden",
+            "justification": "Read-only APIs."
+        },
+        {
+            "id": "AA0247",
+            "action": "Hidden",
+            "justification": "Namespaces not used for now."
+        }
+    ]
+}

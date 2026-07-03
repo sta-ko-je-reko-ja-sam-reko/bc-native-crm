@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($src=\"c:/Users/marko.trnavac/Documents/native-bc-crm/app/.alpackages/Microsoft_Base Application_28.2.50931.52182.app\"; $bytes=[System.IO.File]::ReadAllBytes\\($src\\); $tmp=\"C:/Users/MARKO~1.TRN/AppData/Local/Temp/claude/ba.zip\"; [System.IO.File]::WriteAllBytes\\($tmp,$bytes[40..\\($bytes.Length-1\\)]\\); Add-Type -AssemblyName System.IO.Compression.FileSystem; $z=[System.IO.Compression.ZipFile]::OpenRead\\($tmp\\); $e=$z.Entries | Where-Object { $_.FullName -match 'SymbolReference' } | Select-Object -First 1; $sr=New-Object System.IO.StreamReader\\($e.Open\\(\\)\\); $json=$sr.ReadToEnd\\(\\); $sr.Close\\(\\); $z.Dispose\\(\\); $idx=$json.IndexOf\\('\"Industry Group\"'\\); Write-Output $json.Substring\\($idx,600\\))",
+      "PowerShell($tmp=\"C:/Users/MARKO~1.TRN/AppData/Local/Temp/claude/ba.zip\"; Add-Type -AssemblyName System.IO.Compression.FileSystem; $z=[System.IO.Compression.ZipFile]::OpenRead\\($tmp\\); $e=$z.Entries | Where-Object { $_.FullName -match 'SymbolReference' } | Select-Object -First 1; $sr=New-Object System.IO.StreamReader\\($e.Open\\(\\)\\); $json=$sr.ReadToEnd\\(\\); $sr.Close\\(\\); $z.Dispose\\(\\); $idx=$json.IndexOf\\('\"Id\":5089,\"Name\":\"Industry Group\"'\\); Write-Output \\(\"idx=\"+$idx\\); if\\($idx -gt 0\\){ Write-Output $json.Substring\\($idx-700,750\\) })",
+      "PowerShell($tmp=\"C:/Users/MARKO~1.TRN/AppData/Local/Temp/claude/ba.zip\"; Add-Type -AssemblyName System.IO.Compression.FileSystem; $z=[System.IO.Compression.ZipFile]::OpenRead\\($tmp\\); $e=$z.Entries | Where-Object { $_.FullName -match 'SymbolReference' } | Select-Object -First 1; $sr=New-Object System.IO.StreamReader\\($e.Open\\(\\)\\); $json=$sr.ReadToEnd\\(\\); $sr.Close\\(\\); $z.Dispose\\(\\); [regex]::Matches\\($json,'\"Id\":\\\\d+,\"Name\":\"Industry Group\"'\\) | ForEach-Object { $i=$_.Index; Write-Output \\(\"---MATCH at \"+$i+\"---\"\\); Write-Output $json.Substring\\([Math]::Max\\(0,$i-600\\),660\\) })",
+      "PowerShell($tmp=\"C:/Users/MARKO~1.TRN/AppData/Local/Temp/claude/ba.zip\"; Add-Type -AssemblyName System.IO.Compression.FileSystem; $z=[System.IO.Compression.ZipFile]::OpenRead\\($tmp\\); $e=$z.Entries | Where-Object { $_.FullName -match 'SymbolReference' } | Select-Object -First 1; $sr=New-Object System.IO.StreamReader\\($e.Open\\(\\)\\); $json=$sr.ReadToEnd\\(\\); $sr.Close\\(\\); $z.Dispose\\(\\); $i=44703337; Write-Output $json.Substring\\([Math]::Max\\(0,$i-1500\\),1560\\))"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\marko.trnavac\\Documents\\bc-dev-templates\\bc-customer-project-template\\al-object-types\\_patterns",
+      "C:\\Users\\marko.trnavac\\Documents\\bc-dev-templates\\bc-greenfield-template\\skills\\generate-demo-data",
+      "C:\\Users\\marko.trnavac\\Documents\\bc-dev-templates\\bc-greenfield-template\\checklists",
+      "C:\\Users\\marko.trnavac\\Documents\\bc-dev-templates\\bc-customer-project-template\\al-object-types\\_members"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+namespace NBC.Setup;
+
+/// <summary>Single-record setup for the Opportunity Depth feature.</summary>
+table 50133 "NBC Opportunity Setup"
+{
+    Caption = 'Opportunity Setup';
+    DataClassification = CustomerContent;
+
+    fields
+    {
+        field(1; "Primary Key"; Code[10])
+        {
+            Caption = 'Primary Key';
+            ToolTip = 'Specifies the primary key of the single setup record.';
+        }
+        field(10; Enabled; Boolean)
+        {
+            Caption = 'Enabled';
+            ToolTip = 'Specifies whether opportunity depth (lines, competitors, stakeholders) is enabled. Turning this on shows the related fields, pages and actions; the session restarts so the change takes effect.';
+        }
+    }
+
+    keys
+    {
+        key(PK; "Primary Key") { Clustered = true; }
+    }
+}

@@ -1,0 +1,68 @@
+/* CRM process-flow stage bar — chevron stages, current highlighted. Light/dark friendly. */
+.crm-processbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 6px 4px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.crm-processbar-empty {
+    color: GrayText;
+    font-style: italic;
+    padding: 8px 4px;
+}
+
+.crm-processbar-stages {
+    display: flex;
+    align-items: center;
+}
+
+.crm-processbar-stage {
+    position: relative;
+    padding: 6px 18px 6px 22px;
+    margin-right: 2px;
+    background: rgba(127, 127, 127, 0.14);
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 12px 50%);
+    cursor: pointer;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.crm-processbar-stage:first-child {
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
+    padding-left: 14px;
+}
+
+.crm-processbar-stage.done {
+    background: rgba(46, 125, 50, 0.35);
+}
+
+.crm-processbar-stage.current {
+    background: #1565c0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.crm-processbar-stage.todo {
+    background: rgba(127, 127, 127, 0.14);
+}
+
+.crm-processbar-advance {
+    flex: 0 0 auto;
+    padding: 5px 12px;
+    border: 1px solid rgba(127, 127, 127, 0.5);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+}
+
+.crm-processbar-advance:hover {
+    background: rgba(127, 127, 127, 0.15);
+}

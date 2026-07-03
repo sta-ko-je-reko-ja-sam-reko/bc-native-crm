@@ -1,0 +1,42 @@
+{
+  "id": "ab26b1d6-400c-47d5-83d6-fd7db8418e0b",
+  "name": "CRM",
+  "publisher": "YourCompany",
+  "version": "0.4.0.0",
+  "brief": "Native CRM for Business Central — accounts, activities, opportunities and a guided sales process, without Dataverse.",
+  "description": "Native Business Central CRM that reimplements Dynamics 365 Sales / Dataverse capabilities — record ownership & teams, a unified activity timeline, opportunity management with product lines and stakeholders, and guided business process flows — directly in BC, with no Dataverse or CRM connector required. Built to AppSource standards in the PTE object range.",
+  "privacyStatement": "https://www.example.com/native-bc-crm/privacy",
+  "EULA": "https://www.example.com/native-bc-crm/eula",
+  "help": "https://www.example.com/native-bc-crm/help",
+  "url": "https://www.example.com/native-bc-crm",
+  "logo": "img/AppLogo.png",
+  "platform": "28.0.0.0",
+  "application": "28.2.0.0",
+  "runtime": "17.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 99999
+    }
+  ],
+  "dependencies": [],
+  "internalsVisibleTo": [
+    {
+      "id": "4ce20ffc-ffc3-480a-b18c-186b1b82284b",
+      "name": "CRM Tests",
+      "publisher": "YourCompany"
+    }
+  ],
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile",
+    "NoPromotedActionProperties"
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "contextSensitiveHelpUrl": "https://www.example.com/native-bc-crm/help",
+  "applicationInsightsConnectionString": ""
+}

@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BC Container (crm2802)",
+      "type": "al",
+      "request": "launch",
+      "environmentType": "OnPrem",
+      "server": "http://crm2802",
+      "serverInstance": "BC",
+      "port": 7049,
+      "tenant": "default",
+      "authentication": "UserPassword",
+      "startupObjectType": "Page",
+      "startupObjectId": 22,
+      "schemaUpdateMode": "Synchronize",
+      "breakOnError": "All",
+      "launchBrowser": true,
+      "usePublicURLFromServer": true
+    },
+    {
+      "name": "Cloud Sandbox",
+      "type": "al",
+      "request": "launch",
+      "environmentType": "Sandbox",
+      "environmentName": "sandbox",
+      "startupObjectType": "Page",
+      "startupObjectId": 22,
+      "breakOnError": "All",
+      "launchBrowser": true,
+      "schemaUpdateMode": "ForceSync"
+    }
+  ]
+}
