@@ -1,0 +1,13 @@
+{
+  "al.enableCodeAnalysis": true,
+  "al.codeAnalyzers": [
+    "${CodeCop}",
+    "${UICop}",
+    "${AppSourceCop}",
+    "${PerTenantExtensionCop}"
+  ],
+  "al.ruleSetPath": "ruleset.json",
+  "al.packageCachePath": [ ".alpackages", "../../bc-construction-management/app/.alpackages" ],
+  "al.assemblyProbingPaths": [ ".netpackages" ],
+  "editor.formatOnSave": true
+}

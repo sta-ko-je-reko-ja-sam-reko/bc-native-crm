@@ -1,0 +1,76 @@
+/* CRM activity timeline — neutral styling that works on light and dark BC themes. */
+.crm-timeline {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 4px 6px;
+    box-sizing: border-box;
+}
+
+.crm-timeline-empty {
+    color: GrayText;
+    font-style: italic;
+    padding: 12px 6px;
+}
+
+.crm-timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 6px;
+    border-left: 3px solid #6b6b6b;
+    margin: 0 0 6px 6px;
+    background: rgba(127, 127, 127, 0.06);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.crm-timeline-item:hover {
+    background: rgba(127, 127, 127, 0.15);
+}
+
+.crm-timeline-item.status-completed {
+    border-left-color: #2e7d32;
+    opacity: 0.85;
+}
+
+.crm-timeline-item.status-canceled {
+    border-left-color: #b0b0b0;
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.crm-timeline-item.status-open {
+    border-left-color: #1565c0;
+}
+
+.crm-timeline-icon {
+    flex: 0 0 auto;
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.crm-timeline-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.crm-timeline-subject {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.crm-timeline-meta {
+    color: GrayText;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.crm-timeline-desc {
+    margin-top: 4px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}

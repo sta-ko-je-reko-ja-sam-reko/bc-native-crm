@@ -1,0 +1,37 @@
+namespace NBC.CRM.Catalog;
+
+using Microsoft.Pricing.PriceList;
+using Microsoft.Projects.Resources.Resource;
+
+/// <summary>CRM sales-catalog facets on the standard Resource: selling lifecycle, sell window, default price list.</summary>
+tableextension 50091 "NBC CRM Catalog Resource" extends Resource
+{
+    fields
+    {
+        field(50090; "NBC CRM Catalog Status"; Enum "NBC CRM Catalog Status")
+        {
+            Caption = 'CRM Catalog Status';
+            DataClassification = CustomerContent;
+            ToolTip = 'Specifies the selling lifecycle state (draft, active or retired) of the resource.';
+        }
+        field(50091; "NBC CRM Valid From"; Date)
+        {
+            Caption = 'CRM Valid From';
+            DataClassification = CustomerContent;
+            ToolTip = 'Specifies the first date the resource may be sold.';
+        }
+        field(50092; "NBC CRM Valid To"; Date)
+        {
+            Caption = 'CRM Valid To';
+            DataClassification = CustomerContent;
+            ToolTip = 'Specifies the last date the resource may be sold.';
+        }
+        field(50093; "NBC CRM Default Price List"; Code[20])
+        {
+            Caption = 'CRM Default Price List';
+            DataClassification = CustomerContent;
+            TableRelation = "Price List Header" where("Price Type" = const(Sale));
+            ToolTip = 'Specifies the price list used by default when selling the resource.';
+        }
+    }
+}

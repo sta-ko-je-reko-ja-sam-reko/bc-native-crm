@@ -1,0 +1,33 @@
+{
+    "folders": [
+        {
+            "name": "CRM (root)",
+            "path": "."
+        },
+        {
+            "name": "app",
+            "path": "app"
+        },
+        {
+            "name": "test",
+            "path": "test"
+        }
+    ],
+    "settings": {
+        "editor.formatOnSave": true,
+        "al.enableCodeAnalysis": true,
+        "files.exclude": {
+            "**/.alpackages": true,
+            "**/.netpackages": true,
+            "**/.snapshots": true,
+            "**/*.app": true,
+            "**/rad.json": true
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-dynamics-smb.al",
+            "microsoft.al-go"
+        ]
+    }
+}
