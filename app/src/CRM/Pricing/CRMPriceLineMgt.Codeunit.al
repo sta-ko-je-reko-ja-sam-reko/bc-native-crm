@@ -9,7 +9,7 @@ using Microsoft.Projects.Resources.Resource;
 /// and writes Unit Price on the Price List Line. Invoked from the Recalculate CRM price action.
 /// The pluggable Price Calculation Method (document-time resolution) is the documented next step.
 /// </summary>
-codeunit 50102 "NBC CRM Price Line Mgt."
+codeunit 65102 "NBC CRM Price Line Mgt."
 {
     Access = Public;
 

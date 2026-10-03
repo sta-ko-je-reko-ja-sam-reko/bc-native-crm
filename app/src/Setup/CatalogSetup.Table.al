@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Product Catalog feature.</summary>
-table 50137 "NBC Catalog Setup"
+table 65137 "NBC Catalog Setup"
 {
     Caption = 'Product Catalog Setup';
     DataClassification = CustomerContent;

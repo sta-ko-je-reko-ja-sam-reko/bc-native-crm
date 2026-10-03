@@ -3,7 +3,7 @@ namespace NBC.CRM.Opportunity;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM opportunity lines for integration, Power Platform and MCP tooling.</summary>
-page 50113 "NBC CRM API Opp. Line"
+page 65113 "NBC CRM API Opp. Line"
 {
     PageType = API;
     APIPublisher = 'nbc';

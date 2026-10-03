@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Party Enrichment feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool; in
 /// its own API group (demoParty) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50173 "NBC API Demo Party"
+page 65173 "NBC API Demo Party"
 {
     PageType = API;
     APIPublisher = 'nbc';

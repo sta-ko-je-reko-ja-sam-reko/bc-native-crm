@@ -1,7 +1,7 @@
 namespace NBC.CRM.Catalog;
 
 /// <summary>Kind of seller-facing relationship between two catalog products.</summary>
-enum 50091 "NBC CRM Product Rel. Type"
+enum 65091 "NBC CRM Product Rel. Type"
 {
     Extensible = true;
     Caption = 'CRM Product Relationship Type';

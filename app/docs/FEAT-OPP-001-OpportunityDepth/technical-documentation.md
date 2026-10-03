@@ -40,7 +40,7 @@ in action: minor/additive → `tableextension`; large new structures → custom 
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50040 | CRM Opportunity Line | Opportunity No. | Code[20] | PK1, TableRelation Opportunity |
+| 65040 | CRM Opportunity Line | Opportunity No. | Code[20] | PK1, TableRelation Opportunity |
 | | | Line No. | Integer | PK2 |
 | | | Type | Enum "CRM Opp. Line Type" | Comment/Item/Resource |
 | | | No. | Code[20] | TableRelation by Type |
@@ -48,42 +48,42 @@ in action: minor/additive → `tableextension`; large new structures → custom 
 | | | Quantity | Decimal | |
 | | | Unit Price | Decimal | |
 | | | Line Amount | Decimal | Quantity × Unit Price |
-| 50041 | CRM Opportunity Competitor | Opportunity No., Line No. | Code[20], Integer | PK |
+| 65041 | CRM Opportunity Competitor | Opportunity No., Line No. | Code[20], Integer | PK |
 | | | Name | Text[100] | |
 | | | Threat Level | Enum "CRM Threat Level" | Low/Medium/High |
 | | | Strengths / Weaknesses | Text[250] | |
-| 50042 | CRM Opportunity Stakeholder | Opportunity No., Contact No. | Code[20], Code[20] | PK; Contact TableRelation |
+| 65042 | CRM Opportunity Stakeholder | Opportunity No., Contact No. | Code[20], Code[20] | PK; Contact TableRelation |
 | | | Role | Enum "CRM Stakeholder Role" | Decision Maker/Influencer/Champion/Blocker/End User |
 | | | Role Description | Text[100] | |
 
 ### New Fields on Existing Tables
 | Object | Field ID | Field | Type |
 |---|---|---|---|
-| Opportunity (5092) | 50040 | CRM Owner Type | Enum "CRM Owner Type" |
-| Opportunity (5092) | 50041 | CRM Owner Code | Code[20] |
-| Opportunity (5092) | 50042 | CRM Rating | Enum "CRM Opportunity Rating" |
-| Opportunity (5092) | 50043 | CRM Estimated Revenue | Decimal (FlowField sum of lines) |
+| Opportunity (5092) | 65040 | CRM Owner Type | Enum "CRM Owner Type" |
+| Opportunity (5092) | 65041 | CRM Owner Code | Code[20] |
+| Opportunity (5092) | 65042 | CRM Rating | Enum "CRM Opportunity Rating" |
+| Opportunity (5092) | 65043 | CRM Estimated Revenue | Decimal (FlowField sum of lines) |
 
 ## Objects
 
 | Type | ID | Name |
 |---|---|---|
-| enum | 50040 | CRM Opportunity Rating |
-| enum | 50041 | CRM Opp. Line Type |
-| enum | 50042 | CRM Stakeholder Role |
-| enum | 50043 | CRM Threat Level |
-| table | 50040 | CRM Opportunity Line |
-| table | 50041 | CRM Opportunity Competitor |
-| table | 50042 | CRM Opportunity Stakeholder |
+| enum | 65040 | CRM Opportunity Rating |
+| enum | 65041 | CRM Opp. Line Type |
+| enum | 65042 | CRM Stakeholder Role |
+| enum | 65043 | CRM Threat Level |
+| table | 65040 | CRM Opportunity Line |
+| table | 65041 | CRM Opportunity Competitor |
+| table | 65042 | CRM Opportunity Stakeholder |
 | interface | — | CRM IOpportunityLine |
-| codeunit | 50040 | CRM Opportunity Line Logic |
-| codeunit | 50041 | CRM Opportunity Mgt. |
-| page | 50040 | CRM Opportunity Lines |
-| page | 50041 | CRM Opp. Competitors |
-| page | 50042 | CRM Opp. Stakeholders |
-| tableextension | 50040 | CRM Opportunity |
-| pageextension | 50040 | CRM Opportunity Card |
-| permissionset | 50040 | CRM Opportunities |
+| codeunit | 65040 | CRM Opportunity Line Logic |
+| codeunit | 65041 | CRM Opportunity Mgt. |
+| page | 65040 | CRM Opportunity Lines |
+| page | 65041 | CRM Opp. Competitors |
+| page | 65042 | CRM Opp. Stakeholders |
+| tableextension | 65040 | CRM Opportunity |
+| pageextension | 65040 | CRM Opportunity Card |
+| permissionset | 65040 | CRM Opportunities |
 
 ## Integration Points
 

@@ -10,7 +10,7 @@ using System.IO;
 /// feature's affix fields. The feature <c>Setup</c> table is NEVER added — feature setup is prepopulated via Assisted
 /// Setup / manual entry / MCP, not RapidStart.
 /// </summary>
-codeunit 50182 "NBC Demo Config Package"
+codeunit 65182 "NBC Demo Config Package"
 {
     Access = Public;
 

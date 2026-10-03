@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 /// features added later slot in here (or get their own plan). Granted by the <see cref="NBC CDS Ent"/>
 /// entitlement. Compiled only in the AppSource build (APPSOURCE).
 /// </summary>
-permissionset 50112 "NBC CDS License"
+permissionset 65112 "NBC CDS License"
 {
     Caption = 'CRM Dataverse License';
     Assignable = false;

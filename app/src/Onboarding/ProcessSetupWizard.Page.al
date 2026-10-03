@@ -9,7 +9,7 @@ using NBC.Setup;
 /// seeder the ImportDemoData API exposes to agents. ApplicationArea = All so the wizard is reachable while the
 /// feature is still disabled (bootstrap).
 /// </summary>
-page 50188 "NBC Process Setup Wizard"
+page 65188 "NBC Process Setup Wizard"
 {
     PageType = NavigatePage;
     ApplicationArea = All;

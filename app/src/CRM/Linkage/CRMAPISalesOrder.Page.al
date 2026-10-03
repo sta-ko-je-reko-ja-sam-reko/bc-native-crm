@@ -11,7 +11,7 @@ using NBC.Setup;
 /// Linkage feature toggle (ApplicationArea does not reach the API/MCP path). Document totals and MS sub-parts are
 /// omitted — see the feature's Known Limitations.
 /// </summary>
-page 50150 "NBC CRM API Sales Order"
+page 65150 "NBC CRM API Sales Order"
 {
     PageType = API;
     APIPublisher = 'nbc';

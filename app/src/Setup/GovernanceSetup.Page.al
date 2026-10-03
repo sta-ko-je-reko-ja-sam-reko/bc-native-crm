@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Governance — turn the feature on or off.</summary>
-page 50136 "NBC Governance Setup"
+page 65136 "NBC Governance Setup"
 {
     PageType = Card;
     ApplicationArea = All;

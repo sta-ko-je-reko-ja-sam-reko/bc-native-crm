@@ -9,7 +9,7 @@ using System.Security.AccessControl;
 /// Permission table. Lives in the Unlicensed base entitlement so it runs for every user; <c>SingleInstance</c> with
 /// per-session caching because effective permissions are constant within a session.
 /// </summary>
-codeunit 50001 "NBC Access Policy" implements "NBC IAccessPolicy"
+codeunit 65001 "NBC Access Policy" implements "NBC IAccessPolicy"
 {
     Access = Public;
     SingleInstance = true;

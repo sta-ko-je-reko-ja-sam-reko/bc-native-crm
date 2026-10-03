@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Party Enrichment — turn the feature on or off.</summary>
-page 50132 "NBC Party Setup"
+page 65132 "NBC Party Setup"
 {
     PageType = Card;
     ApplicationArea = All;

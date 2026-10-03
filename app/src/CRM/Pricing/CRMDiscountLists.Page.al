@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>List of reusable CRM discount lists.</summary>
-page 50100 "NBC CRM Discount Lists"
+page 65100 "NBC CRM Discount Lists"
 {
     PageType = List;
     ApplicationArea = NBCPricing;

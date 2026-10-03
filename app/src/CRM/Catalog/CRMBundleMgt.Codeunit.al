@@ -4,7 +4,7 @@ using Microsoft.Inventory.Item;
 using Microsoft.Projects.Resources.Resource;
 
 /// <summary>Bundle roll-up and cross/up-sell suggestion services.</summary>
-codeunit 50092 "NBC CRM Bundle Mgt."
+codeunit 65092 "NBC CRM Bundle Mgt."
 {
     Access = Public;
 

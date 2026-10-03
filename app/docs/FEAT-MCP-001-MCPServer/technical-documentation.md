@@ -1,7 +1,7 @@
 # FEAT-MCP-001 - MCP Server
 
 > **Source/legacy reference:** N/A (greenfield).
-> **Affected objects:** `NBC MCP Setup` (codeunit 50110) — no new AL objects beyond it; it wires the existing API
+> **Affected objects:** `NBC MCP Setup` (codeunit 65110) — no new AL objects beyond it; it wires the existing API
 > pages (FEAT-API-001) and demo importers (demo-data layer) into Business Central MCP configurations.
 > **Namespaces:** `NBC.Core` (the MCP seed codeunit). The exposed tools are the API pages in their feature namespaces.
 
@@ -66,7 +66,7 @@ Linkage.
 
 | Type | ID | Name | Purpose |
 |---|---|---|---|
-| codeunit | 50110 | NBC MCP Setup | Builds the functional + demo MCP configurations via the `MCP Config` facade. |
+| codeunit | 65110 | NBC MCP Setup | Builds the functional + demo MCP configurations via the `MCP Config` facade. |
 
 ## Files
 
@@ -99,7 +99,7 @@ app/docs/FEAT-MCP-001-MCPServer/
 - **Agent instructions are manual.** BC 28.2 has no per-configuration instructions field, so instructions are md
   files pasted into each Copilot agent by hand (see design decision 5). If a future BC version adds an instructions
   API, move the text there and set it in `NBC MCP Setup`.
-- **The Tier-4 Linkage API pages (`NBC CRM API Sales Order`/`Sales Invoice`, 50150–50151) are not yet in a functional
+- **The Tier-4 Linkage API pages (`NBC CRM API Sales Order`/`Sales Invoice`, 65150–65151) are not yet in a functional
   MCP configuration** — `SeedModuleConfigurations` predates them. Follow-up: add a `linkage`/`pipeline` functional
   config exposing them + its `agent-instructions/NBC-CRM-Linkage.md` file.
 - **The seed is not auto-run** — an admin invokes it (intended behind an Assisted Setup).

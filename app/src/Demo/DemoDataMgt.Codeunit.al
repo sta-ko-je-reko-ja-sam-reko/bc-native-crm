@@ -6,7 +6,7 @@ namespace NBC.Demo;
 /// so SeedAll is safe to re-run. Called by an admin / assisted setup; the per-feature import APIs call their own
 /// seeder directly for agent-scoped seeding.
 /// </summary>
-codeunit 50181 "NBC Demo Data Mgt."
+codeunit 65181 "NBC Demo Data Mgt."
 {
     Access = Public;
 

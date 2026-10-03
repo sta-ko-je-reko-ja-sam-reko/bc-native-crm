@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Business Process Flow feature.</summary>
-table 50134 "NBC Process Setup"
+table 65134 "NBC Process Setup"
 {
     Caption = 'Business Process Setup';
     DataClassification = CustomerContent;

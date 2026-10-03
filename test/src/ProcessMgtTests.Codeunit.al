@@ -3,7 +3,7 @@ namespace NBC.Test;
 using NBC.CRM.Process;
 
 /// <summary>Unit tests for CRM Process Mgt. — pure stage-state classification (no DB).</summary>
-codeunit 50903 "NBC CRM Process Mgt. Tests"
+codeunit 69003 "NBC CRM Process Mgt. Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

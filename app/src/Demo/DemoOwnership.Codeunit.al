@@ -11,7 +11,7 @@ using NBC.Dataverse.Ownership;
 /// Every reference to standard CRONUS master data is Get-guarded, so the seeder skips gracefully
 /// (never errors) on a non-CRONUS company. Safe to run repeatedly — fixed keys guard every insert.
 /// </summary>
-codeunit 50161 "NBC Demo Ownership"
+codeunit 65161 "NBC Demo Ownership"
 {
     Access = Public;
 
@@ -155,12 +155,12 @@ codeunit 50161 "NBC Demo Ownership"
             exit;
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CDS Team");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CDS Team Member");
-        AffixFieldNos.Add(50020);
-        AffixFieldNos.Add(50021);
+        AffixFieldNos.Add(65020);
+        AffixFieldNos.Add(65021);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Customer, AffixFieldNos);
         Clear(AffixFieldNos);
-        AffixFieldNos.Add(50020);
-        AffixFieldNos.Add(50021);
+        AffixFieldNos.Add(65020);
+        AffixFieldNos.Add(65021);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Contact, AffixFieldNos);
     end;
 

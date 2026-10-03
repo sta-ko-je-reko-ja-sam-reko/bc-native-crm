@@ -339,7 +339,7 @@ Takeaways for your own tables:
   (§6) and reuse the standard coupling table (5331) — don't reinvent coupling.
 - If this product syncs to **custom Dataverse entities**, generate proxy integration tables (correct
   `ExternalName`/`TableType`) and register mappings the same way; the engine (§4) is entity-agnostic.
-- Keep every new object affixed `CRM` in the 50000–99999 range (see `app/AppSourceCop.json`) — the BaseApp
+- Keep every new object affixed `NBC` (layer tag `CRM`) in the 65000–68999 range (see `app/AppSourceCop.json`) — the BaseApp
   objects above are Microsoft's; you only ever *subscribe* to them and *insert* mapping rows.
 - Re-verify object IDs against the symbols you compile against; this reference is pinned to BaseApp 28.2.
 ```

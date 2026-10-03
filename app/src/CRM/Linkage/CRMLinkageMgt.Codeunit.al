@@ -10,7 +10,7 @@ using NBC.Setup;
 /// opportunity to its resulting orders/invoices. The mutating services re-check the feature flag so the toggle
 /// gates every write path, not only the UI.
 /// </summary>
-codeunit 50141 "NBC CRM Linkage Mgt."
+codeunit 65141 "NBC CRM Linkage Mgt."
 {
     Access = Public;
 

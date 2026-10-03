@@ -8,11 +8,11 @@ using Microsoft.Sales.History;
 /// source order by the linkage reaction. The posted document is immutable, so the field is read-only — a downstream
 /// mirror that keeps billing visible along the pipeline without originating any accounting data.
 /// </summary>
-tableextension 50141 "NBC CRM Sales Inv. Header" extends "Sales Invoice Header"
+tableextension 65141 "NBC CRM Sales Inv. Header" extends "Sales Invoice Header"
 {
     fields
     {
-        field(50140; "NBC CRM Opportunity No."; Code[20])
+        field(65140; "NBC CRM Opportunity No."; Code[20])
         {
             Caption = 'CRM Opportunity No.';
             DataClassification = CustomerContent;

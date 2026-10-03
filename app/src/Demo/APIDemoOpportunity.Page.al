@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Opportunity Depth feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool; in
 /// its own API group (demoOpportunity) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50174 "NBC API Demo Opportunity"
+page 65174 "NBC API Demo Opportunity"
 {
     PageType = API;
     APIPublisher = 'nbc';

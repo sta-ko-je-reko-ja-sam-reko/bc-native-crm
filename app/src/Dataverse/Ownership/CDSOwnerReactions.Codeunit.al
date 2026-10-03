@@ -11,7 +11,7 @@ using System.Security.User;
 /// Default owner-defaulting reactions: on insert of an ownable record with no owner, stamp the
 /// creating user's salesperson. Resolved via the CRM Service Locator so it stays swappable.
 /// </summary>
-codeunit 50022 "NBC CDS Owner Reactions" implements "NBC CDS IOwnerReactions"
+codeunit 65022 "NBC CDS Owner Reactions" implements "NBC CDS IOwnerReactions"
 {
     Access = Public;
 

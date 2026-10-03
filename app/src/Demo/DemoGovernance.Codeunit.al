@@ -8,7 +8,7 @@ using Microsoft.Sales.Customer;
 /// duplicate-detection feature ("NBC Duplicate Mgt.".ShowDuplicateCustomers) has a pair to find.
 /// Safe to run repeatedly — the fixed No.s Get-guard every insert, so re-running is a no-op.
 /// </summary>
-codeunit 50167 "NBC Demo Governance"
+codeunit 65167 "NBC Demo Governance"
 {
     Access = Public;
 

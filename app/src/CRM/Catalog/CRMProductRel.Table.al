@@ -7,7 +7,7 @@ using Microsoft.Projects.Resources.Resource;
 /// Seller-facing relationship between two catalog products (cross-sell / up-sell / accessory / substitute).
 /// BC's Item Substitution covers only the substitute leg; the net-new value is the cross/up-sell/accessory legs.
 /// </summary>
-table 50090 "NBC CRM Product Rel."
+table 65090 "NBC CRM Product Rel."
 {
     Caption = 'CRM Product Relationship';
     DataClassification = CustomerContent;

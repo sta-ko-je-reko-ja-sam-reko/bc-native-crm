@@ -9,7 +9,7 @@ using Microsoft.Integration.Graph;
 /// A NEW page, not a pageextension (API pages can't be extended). The MS `picture` sub-part is omitted — it binds
 /// to "APIV2 - Pictures", which is in the APIV2 app (not a symbol dependency here).
 /// </summary>
-page 50125 "NBC CDS API Contact"
+page 65125 "NBC CDS API Contact"
 {
     PageType = API;
     APIPublisher = 'nbc';

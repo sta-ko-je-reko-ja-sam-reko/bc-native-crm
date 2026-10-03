@@ -7,7 +7,7 @@ using Microsoft.Projects.Resources.Resource;
 /// Catalog lifecycle services: the draft/active/retired transitions and the sell-window gate that BC's
 /// Blocked flag alone cannot express. IsSellable is pure (no DB) so it is unit-testable.
 /// </summary>
-codeunit 50090 "NBC CRM Catalog Mgt."
+codeunit 65090 "NBC CRM Catalog Mgt."
 {
     Access = Public;
 

@@ -5,7 +5,7 @@ namespace NBC.Demo;
 /// CRONUS-style ownership sample data. In its own API group (demoOwnership) so it can be bound to a dedicated MCP
 /// configuration / Copilot agent, separate from the functional APIs.
 /// </summary>
-page 50171 "NBC API Demo Ownership"
+page 65171 "NBC API Demo Ownership"
 {
     PageType = API;
     APIPublisher = 'nbc';

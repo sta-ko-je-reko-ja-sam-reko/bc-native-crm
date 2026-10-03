@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Governance feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool; in its
 /// own API group (demoGovernance) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50177 "NBC API Demo Governance"
+page 65177 "NBC API Demo Governance"
 {
     PageType = API;
     APIPublisher = 'nbc';

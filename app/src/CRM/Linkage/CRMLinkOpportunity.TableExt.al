@@ -8,11 +8,11 @@ using Microsoft.Sales.History;
 /// Closes the pipeline loop on the Opportunity: FlowField counts of the sales orders and posted invoices that trace
 /// back to this opportunity, so a salesperson sees realised transactions straight from the opportunity.
 /// </summary>
-tableextension 50142 "NBC CRM Link Opportunity" extends Opportunity
+tableextension 65142 "NBC CRM Link Opportunity" extends Opportunity
 {
     fields
     {
-        field(50044; "NBC CRM Linked Orders"; Integer)
+        field(65044; "NBC CRM Linked Orders"; Integer)
         {
             Caption = 'CRM Linked Orders';
             FieldClass = FlowField;
@@ -20,7 +20,7 @@ tableextension 50142 "NBC CRM Link Opportunity" extends Opportunity
             Editable = false;
             ToolTip = 'Specifies how many sales orders trace back to this opportunity.';
         }
-        field(50045; "NBC CRM Linked Invoices"; Integer)
+        field(65045; "NBC CRM Linked Invoices"; Integer)
         {
             Caption = 'CRM Linked Invoices';
             FieldClass = FlowField;

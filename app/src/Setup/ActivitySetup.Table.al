@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Activities and Timeline feature.</summary>
-table 50131 "NBC Activity Setup"
+table 65131 "NBC Activity Setup"
 {
     Caption = 'Activity Setup';
     DataClassification = CustomerContent;

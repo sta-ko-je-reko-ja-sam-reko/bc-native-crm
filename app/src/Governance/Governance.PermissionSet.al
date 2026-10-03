@@ -4,7 +4,7 @@ using NBC.Setup;
 using System.Diagnostics;
 
 /// <summary>Permissions for the CRM governance (audit &amp; duplicate) objects.</summary>
-permissionset 50080 "NBC Governance"
+permissionset 65080 "NBC Governance"
 {
     Caption = 'CRM Governance';
     Assignable = true;

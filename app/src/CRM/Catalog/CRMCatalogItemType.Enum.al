@@ -1,7 +1,7 @@
 namespace NBC.CRM.Catalog;
 
 /// <summary>Whether a catalog reference points at a BC Item (goods) or Resource (time).</summary>
-enum 50092 "NBC CRM Catalog Item Type"
+enum 65092 "NBC CRM Catalog Item Type"
 {
     Extensible = true;
     Caption = 'CRM Catalog Item Type';

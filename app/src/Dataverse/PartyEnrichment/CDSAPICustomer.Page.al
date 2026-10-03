@@ -16,7 +16,7 @@ using Microsoft.Sales.Customer;
 /// picture, default dimensions, aged AR, contacts info, document attachments) are omitted — they bind to APIV2-app
 /// pages that are not symbol dependencies here.
 /// </summary>
-page 50124 "NBC CDS API Customer"
+page 65124 "NBC CDS API Customer"
 {
     PageType = API;
     APIPublisher = 'nbc';

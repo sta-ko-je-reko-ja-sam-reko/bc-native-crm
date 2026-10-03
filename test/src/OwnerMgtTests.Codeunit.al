@@ -7,7 +7,7 @@ using NBC.Dataverse.Ownership;
 /// (Owner-defaulting and membership behaviour that touch User Setup / physical data belong in the
 /// integration test plan.)
 /// </summary>
-codeunit 50900 "NBC CDS Owner Mgt. Tests"
+codeunit 69000 "NBC CDS Owner Mgt. Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

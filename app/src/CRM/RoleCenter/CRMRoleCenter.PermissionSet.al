@@ -3,7 +3,7 @@ namespace NBC.CRM.RoleCenter;
 using NBC.Setup;
 
 /// <summary>Permissions for the CRM Role Center objects.</summary>
-permissionset 50070 "NBC CRM Role Center"
+permissionset 65070 "NBC CRM Role Center"
 {
     Caption = 'CRM Role Center';
     Assignable = true;

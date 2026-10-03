@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>A product/resource line on a CRM opportunity; the lines roll up to estimated revenue.</summary>
-table 50040 "NBC CRM Opp. Line"
+table 65040 "NBC CRM Opp. Line"
 {
     Caption = 'CRM Opportunity Line';
     DataClassification = CustomerContent;

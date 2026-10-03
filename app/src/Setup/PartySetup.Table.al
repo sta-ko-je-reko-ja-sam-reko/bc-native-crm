@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Party Enrichment feature.</summary>
-table 50132 "NBC Party Setup"
+table 65132 "NBC Party Setup"
 {
     Caption = 'Party Enrichment Setup';
     DataClassification = CustomerContent;

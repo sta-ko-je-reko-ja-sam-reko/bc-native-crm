@@ -4,7 +4,7 @@ namespace NBC.CRM.Pricing;
 /// Default implementation of CRM IPricingCalc — pure price-derivation and rounding (no DB, unit-testable).
 /// Fills the Dataverse pricing-method gap BC's price list lacks (percent-of-list, markup/margin on cost).
 /// </summary>
-codeunit 50100 "NBC CRM Pricing Calc" implements "NBC CRM IPricingCalc"
+codeunit 65100 "NBC CRM Pricing Calc" implements "NBC CRM IPricingCalc"
 {
     Access = Public;
 

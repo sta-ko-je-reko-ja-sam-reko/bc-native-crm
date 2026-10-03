@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Qualitative rating of an opportunity.</summary>
-enum 50040 "NBC CRM Opportunity Rating"
+enum 65040 "NBC CRM Opportunity Rating"
 {
     Extensible = true;
     Caption = 'CRM Opportunity Rating';

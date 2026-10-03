@@ -49,10 +49,10 @@ gaps from §5: per-line **pricing methods** (percent-of-list, markup/margin on c
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50100 | NBC CRM Discount List | Code | Code[20] | PK |
+| 65100 | NBC CRM Discount List | Code | Code[20] | PK |
 | | | Description | Text[100] | |
 | | | Discount Type | Enum "NBC CRM Discount Type" | Percentage/Amount |
-| 50101 | NBC CRM Discount Tier | Discount List Code | Code[20] | PK1, TableRelation Discount List |
+| 65101 | NBC CRM Discount Tier | Discount List Code | Code[20] | PK1, TableRelation Discount List |
 | | | Line No. | Integer | PK2 |
 | | | Minimum Quantity | Decimal | band start |
 | | | Maximum Quantity | Decimal | band end (0 = open) |
@@ -61,33 +61,33 @@ gaps from §5: per-line **pricing methods** (percent-of-list, markup/margin on c
 ### New Fields on Existing Tables
 | Object | Field ID | Field | Type |
 |---|---|---|---|
-| Price List Line (7001) | 50100 | NBC CRM Pricing Method | Enum "NBC CRM Pricing Method" |
-| Price List Line (7001) | 50101 | NBC CRM Pricing % | Decimal |
-| Price List Line (7001) | 50102 | NBC CRM Discount List | Code[20] (TableRelation) |
-| Price List Line (7001) | 50103 | NBC CRM Rounding Policy | Enum "NBC CRM Rounding Policy" |
-| Price List Line (7001) | 50104 | NBC CRM Rounding Precision | Decimal |
-| Price List Line (7001) | 50105 | NBC CRM Qty. Selling | Enum "NBC CRM Qty. Selling" |
+| Price List Line (7001) | 65100 | NBC CRM Pricing Method | Enum "NBC CRM Pricing Method" |
+| Price List Line (7001) | 65101 | NBC CRM Pricing % | Decimal |
+| Price List Line (7001) | 65102 | NBC CRM Discount List | Code[20] (TableRelation) |
+| Price List Line (7001) | 65103 | NBC CRM Rounding Policy | Enum "NBC CRM Rounding Policy" |
+| Price List Line (7001) | 65104 | NBC CRM Rounding Precision | Decimal |
+| Price List Line (7001) | 65105 | NBC CRM Qty. Selling | Enum "NBC CRM Qty. Selling" |
 
 ## Objects
 
 | Type | ID | Name |
 |---|---|---|
-| enum | 50100 | NBC CRM Pricing Method |
-| enum | 50101 | NBC CRM Rounding Policy |
-| enum | 50102 | NBC CRM Discount Type |
-| enum | 50103 | NBC CRM Qty. Selling |
-| table | 50100 | NBC CRM Discount List |
-| table | 50101 | NBC CRM Discount Tier |
+| enum | 65100 | NBC CRM Pricing Method |
+| enum | 65101 | NBC CRM Rounding Policy |
+| enum | 65102 | NBC CRM Discount Type |
+| enum | 65103 | NBC CRM Qty. Selling |
+| table | 65100 | NBC CRM Discount List |
+| table | 65101 | NBC CRM Discount Tier |
 | interface | — | NBC CRM IPricingCalc |
-| codeunit | 50100 | NBC CRM Pricing Calc |
-| codeunit | 50101 | NBC CRM Discount Mgt. |
-| codeunit | 50102 | NBC CRM Price Line Mgt. |
-| tableextension | 50100 | NBC CRM Price List Line |
-| pageextension | 50100 | NBC CRM Price List Lines |
-| page | 50100 | NBC CRM Discount Lists |
-| page | 50101 | NBC CRM Discount List Card |
-| page | 50102 | NBC CRM Discount Tiers |
-| permissionset | 50100 | NBC CRM Pricing |
+| codeunit | 65100 | NBC CRM Pricing Calc |
+| codeunit | 65101 | NBC CRM Discount Mgt. |
+| codeunit | 65102 | NBC CRM Price Line Mgt. |
+| tableextension | 65100 | NBC CRM Price List Line |
+| pageextension | 65100 | NBC CRM Price List Lines |
+| page | 65100 | NBC CRM Discount Lists |
+| page | 65101 | NBC CRM Discount List Card |
+| page | 65102 | NBC CRM Discount Tiers |
+| permissionset | 65100 | NBC CRM Pricing |
 
 ## Integration Points
 

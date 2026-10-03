@@ -3,7 +3,7 @@ namespace NBC.CRM.RoleCenter;
 using NBC.Dataverse.Activities;
 
 /// <summary>Activity cue tiles for the CRM Role Center.</summary>
-page 50071 "NBC CRM Activity Cues"
+page 65071 "NBC CRM Activity Cues"
 {
     PageType = CardPart;
     ApplicationArea = NBCRoleCenter;

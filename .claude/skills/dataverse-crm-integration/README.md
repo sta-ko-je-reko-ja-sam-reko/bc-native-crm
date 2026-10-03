@@ -80,4 +80,4 @@ primitive exists; it must be built from scratch.** Everything else has a BC star
 Extend, never edit base (tableextension / pageextension / event subscribers). Build the CRM layer **on BC
 Relationship Management + Contact**, reuse Dimensions and Price Lists, and reserve net-new objects for the true
 gaps in Tier 0–1 (ownership/security, activity timeline, opportunity depth, hierarchy). Keep every object affixed
-`CRM` in the 50000–99999 range (`app/AppSourceCop.json`).
+`NBC` (layer tag `CRM`) in the 65000–68999 range (`app/AppSourceCop.json`).

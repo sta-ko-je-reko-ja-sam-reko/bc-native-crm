@@ -9,7 +9,7 @@ using NBC.Governance;
 /// teams, party APIs, MCP setup) and governance (audit, duplicate detection). Referenced by both the
 /// CDS and CRM license sets. Compiled only in the AppSource build (APPSOURCE); the PTE build excludes it.
 /// </summary>
-permissionset 50113 "NBC Core License"
+permissionset 65113 "NBC Core License"
 {
     Caption = 'CRM Core License';
     Assignable = false;

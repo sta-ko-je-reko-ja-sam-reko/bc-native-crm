@@ -13,4 +13,4 @@ Scope = the D365 Sales entities (see [architecture.md §2](../../../.claude/skil
 
 Apply the decision framework in the project [CLAUDE.md](../../../CLAUDE.md) (no-diff → nothing; minor → tableext/pageext
 under a **CRM** group / action category; large → custom entity; un-renderable-but-useful graphics → JS control add-in).
-Affix `CRM`, IDs 50000–99999. Group features in subfolders here (`app/src/CRM/<Feature>/`).
+Affix `NBC` (layer tag `CRM`), IDs 65000–68999. Group features in subfolders here (`app/src/CRM/<Feature>/`).

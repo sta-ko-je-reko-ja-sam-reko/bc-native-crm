@@ -1,6 +1,6 @@
 # FEAT-LNK-001 - Unit Test Plan
 
-DB-free unit tests (codeunit `NBC CRM Linkage Tests`, 50906). Pure logic, no container required.
+DB-free unit tests (codeunit `NBC CRM Linkage Tests`, 69006). Pure logic, no container required.
 
 | # | Test | Arrange | Act | Assert |
 |---|---|---|---|---|

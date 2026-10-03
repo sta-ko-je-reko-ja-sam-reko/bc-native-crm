@@ -7,7 +7,7 @@ using NBC.Core;
 using System.Security.User;
 
 /// <summary>Membership of a Salesperson/Purchaser in a CRM Team.</summary>
-table 50021 "NBC CDS Team Member"
+table 65021 "NBC CDS Team Member"
 {
     Caption = 'CRM Team Member';
     DataClassification = CustomerContent;

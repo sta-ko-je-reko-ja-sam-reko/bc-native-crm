@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Governance feature.</summary>
-table 50136 "NBC Governance Setup"
+table 65136 "NBC Governance Setup"
 {
     Caption = 'Governance Setup';
     DataClassification = CustomerContent;

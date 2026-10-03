@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>An ordered stage of a CRM process.</summary>
-table 50061 "NBC CRM Process Stage"
+table 65061 "NBC CRM Process Stage"
 {
     Caption = 'CRM Process Stage';
     DataClassification = CustomerContent;

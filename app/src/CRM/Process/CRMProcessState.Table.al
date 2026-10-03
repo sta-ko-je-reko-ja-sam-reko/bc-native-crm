@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>Per-record progress through a CRM process (generic by table no. + record SystemId).</summary>
-table 50062 "NBC CRM Process State"
+table 65062 "NBC CRM Process State"
 {
     Caption = 'CRM Process State';
     DataClassification = CustomerContent;

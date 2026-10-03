@@ -3,7 +3,7 @@ namespace NBC.CRM.RoleCenter;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Prepares the CRM cue record and scopes its FlowFilters to the current user.</summary>
-codeunit 50070 "NBC CRM Cue Mgt."
+codeunit 65070 "NBC CRM Cue Mgt."
 {
     Access = Public;
 

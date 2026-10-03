@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>List of CRM activities.</summary>
-page 50030 "NBC CDS Activities"
+page 65030 "NBC CDS Activities"
 {
     PageType = List;
     ApplicationArea = NBCActivities;

@@ -1,7 +1,7 @@
 namespace NBC.Onboarding;
 
 /// <summary>The steps of a per-feature Assisted Setup wizard: overview → enable → sample-data opt-in → finish.</summary>
-enum 50183 "NBC Wizard Step"
+enum 65183 "NBC Wizard Step"
 {
     Extensible = false;
 

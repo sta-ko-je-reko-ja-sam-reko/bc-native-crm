@@ -7,19 +7,19 @@ using System.Environment.Configuration;
 /// tag used on that feature's pages; the area is switched on/off from the feature setup's Enabled flag by
 /// the <see cref="NBC App Area Subscriber"/>.
 /// </summary>
-tableextension 50130 "NBC App Area Setup" extends "Application Area Setup"
+tableextension 65130 "NBC App Area Setup" extends "Application Area Setup"
 {
     fields
     {
-        field(50130; "NBC Ownership"; Boolean) { DataClassification = SystemMetadata; }
-        field(50131; "NBC Activities"; Boolean) { DataClassification = SystemMetadata; }
-        field(50132; "NBC Party"; Boolean) { DataClassification = SystemMetadata; }
-        field(50133; "NBC Opportunity"; Boolean) { DataClassification = SystemMetadata; }
-        field(50134; "NBC Process"; Boolean) { DataClassification = SystemMetadata; }
-        field(50135; "NBC Role Center"; Boolean) { DataClassification = SystemMetadata; }
-        field(50136; "NBC Governance"; Boolean) { DataClassification = SystemMetadata; }
-        field(50137; "NBC Catalog"; Boolean) { DataClassification = SystemMetadata; }
-        field(50138; "NBC Pricing"; Boolean) { DataClassification = SystemMetadata; }
-        field(50139; "NBC Linkage"; Boolean) { DataClassification = SystemMetadata; }
+        field(65130; "NBC Ownership"; Boolean) { DataClassification = SystemMetadata; }
+        field(65131; "NBC Activities"; Boolean) { DataClassification = SystemMetadata; }
+        field(65132; "NBC Party"; Boolean) { DataClassification = SystemMetadata; }
+        field(65133; "NBC Opportunity"; Boolean) { DataClassification = SystemMetadata; }
+        field(65134; "NBC Process"; Boolean) { DataClassification = SystemMetadata; }
+        field(65135; "NBC Role Center"; Boolean) { DataClassification = SystemMetadata; }
+        field(65136; "NBC Governance"; Boolean) { DataClassification = SystemMetadata; }
+        field(65137; "NBC Catalog"; Boolean) { DataClassification = SystemMetadata; }
+        field(65138; "NBC Pricing"; Boolean) { DataClassification = SystemMetadata; }
+        field(65139; "NBC Linkage"; Boolean) { DataClassification = SystemMetadata; }
     }
 }

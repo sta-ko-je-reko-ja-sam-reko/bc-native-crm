@@ -3,7 +3,7 @@ namespace NBC.CRM.Pricing;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM discount lists for integration, Power Platform and MCP tooling.</summary>
-page 50122 "NBC CRM API Discount List"
+page 65122 "NBC CRM API Discount List"
 {
     PageType = API;
     APIPublisher = 'nbc';

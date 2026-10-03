@@ -6,7 +6,7 @@ using Microsoft.Sales.Customer;
 using NBC.Setup;
 
 /// <summary>Classification &amp; preference groups + subsidiaries action on the Customer Card, gated by the Party Enrichment feature.</summary>
-pageextension 50050 "NBC CDS Enrich Customer Card" extends "Customer Card"
+pageextension 65050 "NBC CDS Enrich Customer Card" extends "Customer Card"
 {
     layout
     {

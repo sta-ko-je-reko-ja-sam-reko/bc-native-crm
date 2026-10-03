@@ -12,7 +12,7 @@ using NBC.Dataverse.Ownership;
 /// CRM opportunity services. Logs a won/lost close activity (the Dataverse opportunityclose analog),
 /// reusing the FEAT-ACT-001 activity model. The standard BC status/close flow is left intact.
 /// </summary>
-codeunit 50041 "NBC CRM Opportunity Mgt."
+codeunit 65041 "NBC CRM Opportunity Mgt."
 {
     Access = Public;
 

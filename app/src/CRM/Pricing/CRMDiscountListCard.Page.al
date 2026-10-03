@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>Card for a CRM discount list and its quantity tiers.</summary>
-page 50101 "NBC CRM Discount List Card"
+page 65101 "NBC CRM Discount List Card"
 {
     PageType = Card;
     ApplicationArea = NBCPricing;

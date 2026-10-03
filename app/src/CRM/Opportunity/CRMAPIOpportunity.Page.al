@@ -7,7 +7,7 @@ using Microsoft.CRM.Opportunity;
 /// integrations/MCP see the whole entity) plus the CRM affix fields. A NEW page, not a pageextension, because
 /// API pages cannot be extended. Published under our own APIPublisher/APIGroup/APIVersion.
 /// </summary>
-page 50126 "NBC CRM API Opportunity"
+page 65126 "NBC CRM API Opportunity"
 {
     PageType = API;
     APIPublisher = 'nbc';

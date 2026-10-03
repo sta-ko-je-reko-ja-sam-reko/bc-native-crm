@@ -3,7 +3,7 @@ namespace NBC.CRM.Catalog;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM bundles for integration, Power Platform and MCP tooling.</summary>
-page 50119 "NBC CRM API Bundle"
+page 65119 "NBC CRM API Bundle"
 {
     PageType = API;
     APIPublisher = 'nbc';

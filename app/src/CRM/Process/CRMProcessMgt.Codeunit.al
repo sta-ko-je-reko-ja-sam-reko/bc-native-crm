@@ -6,7 +6,7 @@ using Microsoft.CRM.Opportunity;
 /// CRM business-process-flow service: resolve the active process for a table, track and advance a
 /// record's stage (lazy state creation), and build the JSON the process-bar control add-in renders.
 /// </summary>
-codeunit 50060 "NBC CRM Process Mgt."
+codeunit 65060 "NBC CRM Process Mgt."
 {
     Access = Public;
 

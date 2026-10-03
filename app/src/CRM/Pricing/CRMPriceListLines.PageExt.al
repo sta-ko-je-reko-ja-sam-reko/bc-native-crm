@@ -4,7 +4,7 @@ using Microsoft.Pricing.PriceList;
 using NBC.Setup;
 
 /// <summary>CRM pricing-method fields + a Recalculate CRM price action on the Price List Lines part, gated by the Pricing feature.</summary>
-pageextension 50100 "NBC CRM Price List Lines" extends "Price List Lines"
+pageextension 65100 "NBC CRM Price List Lines" extends "Price List Lines"
 {
     layout
     {

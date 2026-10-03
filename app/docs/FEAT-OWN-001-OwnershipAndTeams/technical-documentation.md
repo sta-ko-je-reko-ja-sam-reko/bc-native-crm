@@ -47,12 +47,12 @@ the *"my records" scoping* as a convenience filter, and we document honestly wha
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50020 | CRM Team | Code | Code[20] | PK |
+| 65020 | CRM Team | Code | Code[20] | PK |
 | | | Name | Text[100] | |
 | | | Description | Text[250] | |
 | | | Team Lead Salesp. Code | Code[20] | TableRelation Salesperson/Purchaser |
 | | | Member Count | Integer | FlowField Count(CRM Team Member) |
-| 50021 | CRM Team Member | Team Code | Code[20] | PK1, TableRelation CRM Team |
+| 65021 | CRM Team Member | Team Code | Code[20] | PK1, TableRelation CRM Team |
 | | | Salesperson Code | Code[20] | PK2, TableRelation Salesperson/Purchaser |
 | | | Team Lead | Boolean | |
 | | | Salesperson Name | Text[100] | FlowField |
@@ -60,35 +60,35 @@ the *"my records" scoping* as a convenience filter, and we document honestly wha
 ### New Fields on Existing Tables
 | Object | Field ID | Field | Type | Notes |
 |---|---|---|---|---|
-| Customer (18) | 50020 | CRM Owner Type | Enum "CRM Owner Type" | Salesperson (default) / Team |
-| Customer (18) | 50021 | CRM Owner Code | Code[20] | conditional TableRelation on Owner Type |
-| Contact (5050) | 50020 | CRM Owner Type | Enum "CRM Owner Type" | |
-| Contact (5050) | 50021 | CRM Owner Code | Code[20] | |
+| Customer (18) | 65020 | CRM Owner Type | Enum "CRM Owner Type" | Salesperson (default) / Team |
+| Customer (18) | 65021 | CRM Owner Code | Code[20] | conditional TableRelation on Owner Type |
+| Contact (5050) | 65020 | CRM Owner Type | Enum "CRM Owner Type" | |
+| Contact (5050) | 65021 | CRM Owner Code | Code[20] | |
 
 ## Objects
 
 | Type | ID | Name | Folder | Purpose |
 |---|---|---|---|---|
-| enum | 50020 | CRM Owner Type | Dataverse/Ownership | Salesperson / Team |
-| table | 50020 | CRM Team | Dataverse/Ownership | Team master |
-| table | 50021 | CRM Team Member | Dataverse/Ownership | Team ↔ Salesperson |
+| enum | 65020 | CRM Owner Type | Dataverse/Ownership | Salesperson / Team |
+| table | 65020 | CRM Team | Dataverse/Ownership | Team master |
+| table | 65021 | CRM Team Member | Dataverse/Ownership | Team ↔ Salesperson |
 | interface | — | CRM ITeam | Dataverse/Ownership | Team trigger logic |
 | interface | — | CRM IOwnerReactions | Dataverse/Ownership | swappable owner-default reactions |
-| codeunit | 50020 | CRM Owner Mgt. | Dataverse/Ownership | owner service API (default/assign/scope/membership) |
-| codeunit | 50021 | CRM Team Logic | Dataverse/Ownership | default ITeam impl |
-| codeunit | 50022 | CRM Owner Reactions | Dataverse/Ownership | default IOwnerReactions impl |
-| codeunit | 50023 | CRM Owner Subscribers | Dataverse/Ownership | pure-proxy subscribers (Customer/Contact OnInsert) |
-| codeunit | 50000 | CRM Service Locator | Core | SingleInstance app-wide resolver |
-| page | 50020 | CRM Teams | Dataverse/Ownership | team list |
-| page | 50021 | CRM Team Card | Dataverse/Ownership | team card + members |
-| page | 50022 | CRM Team Members | Dataverse/Ownership | members ListPart |
-| tableextension | 50020 | CRM Owner Customer | Dataverse/Ownership | owner fields on Customer |
-| tableextension | 50021 | CRM Owner Contact | Dataverse/Ownership | owner fields on Contact |
-| pageextension | 50020 | CRM Owner Customer Card | Dataverse/Ownership | Owner in CRM group + actions |
-| pageextension | 50021 | CRM Owner Customer List | Dataverse/Ownership | Owner column + "Show my CRM records" |
-| pageextension | 50022 | CRM Owner Contact Card | Dataverse/Ownership | as Customer Card |
-| pageextension | 50023 | CRM Owner Contact List | Dataverse/Ownership | as Customer List |
-| permissionset | 50000 | CRM Foundation | Core | all Tier-0 objects |
+| codeunit | 65020 | CRM Owner Mgt. | Dataverse/Ownership | owner service API (default/assign/scope/membership) |
+| codeunit | 65021 | CRM Team Logic | Dataverse/Ownership | default ITeam impl |
+| codeunit | 65022 | CRM Owner Reactions | Dataverse/Ownership | default IOwnerReactions impl |
+| codeunit | 65023 | CRM Owner Subscribers | Dataverse/Ownership | pure-proxy subscribers (Customer/Contact OnInsert) |
+| codeunit | 65000 | CRM Service Locator | Core | SingleInstance app-wide resolver |
+| page | 65020 | CRM Teams | Dataverse/Ownership | team list |
+| page | 65021 | CRM Team Card | Dataverse/Ownership | team card + members |
+| page | 65022 | CRM Team Members | Dataverse/Ownership | members ListPart |
+| tableextension | 65020 | CRM Owner Customer | Dataverse/Ownership | owner fields on Customer |
+| tableextension | 65021 | CRM Owner Contact | Dataverse/Ownership | owner fields on Contact |
+| pageextension | 65020 | CRM Owner Customer Card | Dataverse/Ownership | Owner in CRM group + actions |
+| pageextension | 65021 | CRM Owner Customer List | Dataverse/Ownership | Owner column + "Show my CRM records" |
+| pageextension | 65022 | CRM Owner Contact Card | Dataverse/Ownership | as Customer Card |
+| pageextension | 65023 | CRM Owner Contact List | Dataverse/Ownership | as Customer List |
+| permissionset | 65000 | CRM Foundation | Core | all Tier-0 objects |
 
 ## Integration Points
 

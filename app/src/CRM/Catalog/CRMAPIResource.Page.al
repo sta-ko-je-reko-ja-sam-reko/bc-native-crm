@@ -7,7 +7,7 @@ using Microsoft.Projects.Resources.Resource;
 /// exposing the meaningful Resource master fields (so integrations/MCP see the whole resource) plus the CRM
 /// catalog affix fields. A NEW page, not a pageextension (API pages can't be extended).
 /// </summary>
-page 50128 "NBC CRM API Resource"
+page 65128 "NBC CRM API Resource"
 {
     PageType = API;
     APIPublisher = 'nbc';

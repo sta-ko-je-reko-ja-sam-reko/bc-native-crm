@@ -5,7 +5,7 @@ namespace NBC.CRM.Linkage;
 /// Dataverse salesorder statecode (Active / Submitted / Fulfilled / Canceled). Sales-facing only — it does
 /// not gate BC posting.
 /// </summary>
-enum 50140 "NBC CRM Sales Status"
+enum 65140 "NBC CRM Sales Status"
 {
     Extensible = true;
     Caption = 'CRM Sales Status';

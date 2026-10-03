@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>Quantity tiers subpage for a CRM discount list.</summary>
-page 50102 "NBC CRM Discount Tiers"
+page 65102 "NBC CRM Discount Tiers"
 {
     PageType = ListPart;
     ApplicationArea = NBCPricing;

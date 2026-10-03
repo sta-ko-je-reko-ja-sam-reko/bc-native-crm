@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Opportunity Depth feature.</summary>
-table 50133 "NBC Opportunity Setup"
+table 65133 "NBC Opportunity Setup"
 {
     Caption = 'Opportunity Setup';
     DataClassification = CustomerContent;

@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using NBC.Setup;
 
 /// <summary>API page exposing per-record CRM process state for integration, Power Platform and MCP tooling.</summary>
-page 50118 "NBC CRM API Process State"
+page 65118 "NBC CRM API Process State"
 {
     PageType = API;
     APIPublisher = 'nbc';

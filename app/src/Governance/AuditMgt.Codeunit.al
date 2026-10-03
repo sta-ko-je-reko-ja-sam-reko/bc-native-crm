@@ -7,7 +7,7 @@ using NBC.Dataverse.Ownership;
 using System.Diagnostics;
 
 /// <summary>Enables BC Change Log audit tracking for the CRM tables (reuses the native Change Log).</summary>
-codeunit 50080 "NBC Audit Mgt."
+codeunit 65080 "NBC Audit Mgt."
 {
     Access = Public;
 

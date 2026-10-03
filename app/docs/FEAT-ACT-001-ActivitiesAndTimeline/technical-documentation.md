@@ -45,7 +45,7 @@ a FactBox on the party cards. Reuses ownership from [FEAT-OWN-001](../FEAT-OWN-0
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50030 | CRM Activity | Entry No. | Integer | PK, AutoIncrement |
+| 65030 | CRM Activity | Entry No. | Integer | PK, AutoIncrement |
 | | | Activity Type | Enum "CRM Activity Type" | Task/Phone Call/Appointment/Email/Note |
 | | | Subject | Text[100] | |
 | | | Description | Text[2048] | |
@@ -70,21 +70,21 @@ a FactBox on the party cards. Reuses ownership from [FEAT-OWN-001](../FEAT-OWN-0
 
 | Type | ID | Name | Folder |
 |---|---|---|---|
-| enum | 50030 | CRM Activity Type | Dataverse/Activities |
-| enum | 50031 | CRM Activity Status | Dataverse/Activities |
-| enum | 50032 | CRM Activity Priority | Dataverse/Activities |
-| enum | 50033 | CRM Activity Direction | Dataverse/Activities |
-| table | 50030 | CRM Activity | Dataverse/Activities |
+| enum | 65030 | CRM Activity Type | Dataverse/Activities |
+| enum | 65031 | CRM Activity Status | Dataverse/Activities |
+| enum | 65032 | CRM Activity Priority | Dataverse/Activities |
+| enum | 65033 | CRM Activity Direction | Dataverse/Activities |
+| table | 65030 | CRM Activity | Dataverse/Activities |
 | interface | — | CRM IActivity | Dataverse/Activities |
-| codeunit | 50030 | CRM Activity Mgt. | Dataverse/Activities |
-| codeunit | 50031 | CRM Activity Logic | Dataverse/Activities |
-| page | 50030 | CRM Activities | Dataverse/Activities |
-| page | 50031 | CRM Activity Card | Dataverse/Activities |
-| page | 50032 | CRM Timeline Part | Dataverse/Activities |
+| codeunit | 65030 | CRM Activity Mgt. | Dataverse/Activities |
+| codeunit | 65031 | CRM Activity Logic | Dataverse/Activities |
+| page | 65030 | CRM Activities | Dataverse/Activities |
+| page | 65031 | CRM Activity Card | Dataverse/Activities |
+| page | 65032 | CRM Timeline Part | Dataverse/Activities |
 | controladdin | — | CRM Timeline | Dataverse/Activities/Timeline |
-| pageextension | 50030 | CRM Act. Customer Card | Dataverse/Activities |
-| pageextension | 50031 | CRM Act. Contact Card | Dataverse/Activities |
-| permissionset | 50030 | CRM Activities | Dataverse/Activities |
+| pageextension | 65030 | CRM Act. Customer Card | Dataverse/Activities |
+| pageextension | 65031 | CRM Act. Contact Card | Dataverse/Activities |
+| permissionset | 65030 | CRM Activities | Dataverse/Activities |
 
 ## Files
 

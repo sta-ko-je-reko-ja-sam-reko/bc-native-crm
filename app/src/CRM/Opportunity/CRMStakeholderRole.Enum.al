@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Role a contact plays on an opportunity.</summary>
-enum 50042 "NBC CRM Stakeholder Role"
+enum 65042 "NBC CRM Stakeholder Role"
 {
     Extensible = true;
     Caption = 'CRM Stakeholder Role';

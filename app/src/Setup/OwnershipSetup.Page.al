@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Ownership and Teams — turn the feature on or off.</summary>
-page 50130 "NBC Ownership Setup"
+page 65130 "NBC Ownership Setup"
 {
     PageType = Card;
     ApplicationArea = All;

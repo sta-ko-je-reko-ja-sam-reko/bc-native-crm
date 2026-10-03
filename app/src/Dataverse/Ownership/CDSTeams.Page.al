@@ -7,7 +7,7 @@ using NBC.Core;
 using System.Security.User;
 
 /// <summary>List of CRM Teams.</summary>
-page 50020 "NBC CDS Teams"
+page 65020 "NBC CDS Teams"
 {
     PageType = List;
     ApplicationArea = NBCOwnership;

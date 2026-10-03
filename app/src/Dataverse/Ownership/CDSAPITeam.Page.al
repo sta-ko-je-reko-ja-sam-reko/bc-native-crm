@@ -3,7 +3,7 @@ namespace NBC.Dataverse.Ownership;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM Teams for integration, Power Platform and MCP tooling.</summary>
-page 50110 "NBC CDS API Team"
+page 65110 "NBC CDS API Team"
 {
     PageType = API;
     APIPublisher = 'nbc';

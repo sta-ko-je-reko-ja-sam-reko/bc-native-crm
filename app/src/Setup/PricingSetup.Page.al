@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Pricing Flexibility — turn the feature on or off.</summary>
-page 50138 "NBC Pricing Setup"
+page 65138 "NBC Pricing Setup"
 {
     PageType = Card;
     ApplicationArea = All;

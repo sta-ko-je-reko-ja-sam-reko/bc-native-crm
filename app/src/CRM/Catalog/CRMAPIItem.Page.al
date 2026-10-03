@@ -14,7 +14,7 @@ using Microsoft.Inventory.Posting;
 /// picture, default dimensions, variants, document attachments) are omitted — they bind to APIV2-app pages that are
 /// not symbol dependencies here.
 /// </summary>
-page 50127 "NBC CRM API Item"
+page 65127 "NBC CRM API Item"
 {
     PageType = API;
     APIPublisher = 'nbc';

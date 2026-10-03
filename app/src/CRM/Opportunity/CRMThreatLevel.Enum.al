@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Competitive threat level.</summary>
-enum 50043 "NBC CRM Threat Level"
+enum 65043 "NBC CRM Threat Level"
 {
     Extensible = true;
     Caption = 'CRM Threat Level';

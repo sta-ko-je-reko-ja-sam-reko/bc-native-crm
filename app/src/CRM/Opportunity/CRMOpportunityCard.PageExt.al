@@ -13,7 +13,7 @@ using NBC.Setup;
 /// Adds CRM depth to the Opportunity Card: owner/rating, line/competitor/stakeholder subpages,
 /// the activity Timeline FactBox, and CRM actions. Gated by the Opportunity feature.
 /// </summary>
-pageextension 50040 "NBC CRM Opportunity Card" extends "Opportunity Card"
+pageextension 65040 "NBC CRM Opportunity Card" extends "Opportunity Card"
 {
     layout
     {

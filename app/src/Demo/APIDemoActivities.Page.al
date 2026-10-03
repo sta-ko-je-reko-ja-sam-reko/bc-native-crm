@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Activities feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool; in its own
 /// API group (demoActivities) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50172 "NBC API Demo Activities"
+page 65172 "NBC API Demo Activities"
 {
     PageType = API;
     APIPublisher = 'nbc';

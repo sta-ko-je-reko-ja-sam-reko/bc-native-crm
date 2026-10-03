@@ -11,7 +11,7 @@ using NBC.Dataverse.Ownership;
 /// codeunits only ever check permission by object id via Microsoft objects and never touch a licensed product
 /// object or expose product data, so granting them broadly is safe.
 /// </summary>
-permissionset 50121 "NBC Base Subscribers"
+permissionset 65121 "NBC Base Subscribers"
 {
     Caption = 'CRM Base Subscribers';
     Assignable = true;

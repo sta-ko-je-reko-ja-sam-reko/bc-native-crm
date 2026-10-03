@@ -6,7 +6,7 @@ using NBC.Dataverse.Activities;
 /// Unit tests for CRM Activity Mgt. — focuses on the pure record→JSON timeline builder using
 /// temporary records (no physical data / posting).
 /// </summary>
-codeunit 50901 "NBC CDS Activity Mgt. Tests"
+codeunit 69001 "NBC CDS Activity Mgt. Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

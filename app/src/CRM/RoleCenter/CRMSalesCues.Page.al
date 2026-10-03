@@ -3,7 +3,7 @@ namespace NBC.CRM.RoleCenter;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>Opportunity cue tiles for the CRM Role Center.</summary>
-page 50072 "NBC CRM Sales Cues"
+page 65072 "NBC CRM Sales Cues"
 {
     PageType = CardPart;
     ApplicationArea = NBCRoleCenter;

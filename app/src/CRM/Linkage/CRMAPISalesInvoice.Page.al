@@ -8,7 +8,7 @@ using Microsoft.Sales.History;
 /// the page is read-only: no insert/modify/delete and no feature write-guard (reads stay open per the toggle
 /// pattern). A NEW page, not a pageextension. Document totals and MS sub-parts are omitted — see Known Limitations.
 /// </summary>
-page 50151 "NBC CRM API Sales Invoice"
+page 65151 "NBC CRM API Sales Invoice"
 {
     PageType = API;
     APIPublisher = 'nbc';

@@ -19,7 +19,7 @@ on:
       idrange:
         description: ID range
         required: true
-        default: '50000..99999'
+        default: '69000..69999'
       sampleCode:
         description: Include Sample code?
         type: boolean

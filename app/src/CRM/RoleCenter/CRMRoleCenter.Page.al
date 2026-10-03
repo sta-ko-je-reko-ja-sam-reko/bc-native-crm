@@ -7,7 +7,7 @@ using NBC.Dataverse.Ownership;
 using NBC.Governance;
 
 /// <summary>Home page (Role Center) for the native CRM.</summary>
-page 50070 "NBC CRM Role Center"
+page 65070 "NBC CRM Role Center"
 {
     PageType = RoleCenter;
     Caption = 'CRM Manager';

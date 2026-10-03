@@ -7,17 +7,17 @@ using NBC.Core;
 using System.Security.User;
 
 /// <summary>CRM ownership fields on Customer.</summary>
-tableextension 50020 "NBC CDS Owner Customer" extends Customer
+tableextension 65020 "NBC CDS Owner Customer" extends Customer
 {
     fields
     {
-        field(50020; "NBC CDS Owner Type"; Enum "NBC CDS Owner Type")
+        field(65020; "NBC CDS Owner Type"; Enum "NBC CDS Owner Type")
         {
             Caption = 'CRM Owner Type';
             DataClassification = CustomerContent;
             ToolTip = 'Specifies whether this record is owned by a salesperson or a team for CRM.';
         }
-        field(50021; "NBC CDS Owner Code"; Code[20])
+        field(65021; "NBC CDS Owner Code"; Code[20])
         {
             Caption = 'CRM Owner';
             DataClassification = CustomerContent;

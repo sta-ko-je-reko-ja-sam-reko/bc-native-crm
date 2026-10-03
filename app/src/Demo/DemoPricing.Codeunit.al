@@ -11,7 +11,7 @@ using NBC.CRM.Pricing;
 /// Every insert is guarded by a fixed key and every reference to standard master data is Get-guarded,
 /// so the seeder is safe to run repeatedly and skips gracefully on a non-CRONUS company.
 /// </summary>
-codeunit 50169 "NBC Demo Pricing"
+codeunit 65169 "NBC Demo Pricing"
 {
     Access = Public;
 
@@ -118,12 +118,12 @@ codeunit 50169 "NBC Demo Pricing"
             exit;
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Discount List");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Discount Tier");
-        AffixFieldNos.Add(50100);
-        AffixFieldNos.Add(50101);
-        AffixFieldNos.Add(50102);
-        AffixFieldNos.Add(50103);
-        AffixFieldNos.Add(50104);
-        AffixFieldNos.Add(50105);
+        AffixFieldNos.Add(65100);
+        AffixFieldNos.Add(65101);
+        AffixFieldNos.Add(65102);
+        AffixFieldNos.Add(65103);
+        AffixFieldNos.Add(65104);
+        AffixFieldNos.Add(65105);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::"Price List Line", AffixFieldNos);
     end;
 

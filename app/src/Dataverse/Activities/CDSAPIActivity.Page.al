@@ -3,7 +3,7 @@ namespace NBC.Dataverse.Activities;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM Activities for integration, Power Platform and MCP tooling.</summary>
-page 50112 "NBC CDS API Activity"
+page 65112 "NBC CDS API Activity"
 {
     PageType = API;
     APIPublisher = 'nbc';

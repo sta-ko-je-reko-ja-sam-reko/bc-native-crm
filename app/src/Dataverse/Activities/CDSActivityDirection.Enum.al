@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Direction of a CRM activity (for phone calls / emails).</summary>
-enum 50033 "NBC CDS Activity Direction"
+enum 65033 "NBC CDS Activity Direction"
 {
     Extensible = true;
     Caption = 'CRM Activity Direction';

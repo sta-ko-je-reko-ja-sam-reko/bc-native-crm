@@ -1,7 +1,7 @@
 namespace NBC.CRM.Catalog;
 
 /// <summary>Component lines subpage for a CRM bundle.</summary>
-page 50092 "NBC CRM Bundle Lines"
+page 65092 "NBC CRM Bundle Lines"
 {
     PageType = ListPart;
     ApplicationArea = NBCCatalog;

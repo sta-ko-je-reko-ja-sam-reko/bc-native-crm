@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Card for a single CRM activity.</summary>
-page 50031 "NBC CDS Activity Card"
+page 65031 "NBC CDS Activity Card"
 {
     PageType = Card;
     ApplicationArea = NBCActivities;

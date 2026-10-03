@@ -7,7 +7,7 @@ using NBC.Setup;
 /// Surfaces the read-only pipeline link on the Posted Sales Invoice, gated by the Linkage feature. The posted
 /// document stays immutable; this only shows the opportunity stamped at posting.
 /// </summary>
-pageextension 50144 "NBC CRM Posted Sales Invoice" extends "Posted Sales Invoice"
+pageextension 65144 "NBC CRM Posted Sales Invoice" extends "Posted Sales Invoice"
 {
     layout
     {

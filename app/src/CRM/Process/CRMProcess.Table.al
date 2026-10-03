@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>A business-process-flow definition bound to an entity (native BPF reimplementation).</summary>
-table 50060 "NBC CRM Process"
+table 65060 "NBC CRM Process"
 {
     Caption = 'CRM Process';
     DataClassification = CustomerContent;
