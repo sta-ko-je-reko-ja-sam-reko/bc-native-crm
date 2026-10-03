@@ -8,7 +8,7 @@ using NBC.Dataverse.Ownership;
 /// CRM activity service: initialize an activity for a regarded record, complete it, and build the
 /// timeline JSON consumed by the CRM Timeline control add-in.
 /// </summary>
-codeunit 50030 "NBC CDS Activity Mgt."
+codeunit 65030 "NBC CDS Activity Mgt."
 {
     Access = Public;
 

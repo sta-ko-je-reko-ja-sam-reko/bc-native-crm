@@ -3,7 +3,7 @@
 A from-scratch Microsoft Dynamics 365 Business Central AL extension that **natively reimplements, inside BC, the
 Dynamics 365 / Dataverse CRM capabilities that BC does not have** — with **no dependency on Dataverse, the CRM
 connector, or the CRM proxy tables**. This is a **greenfield ISV product** built to **AppSource standards** but
-shipped in the **PTE object ID range (50000–99999)**. Not a Navision/NAV port; not a Dataverse integration.
+shipped in the **PTE object ID range**, block **65000–68999** (tests 69000–69999). Not a Navision/NAV port; not a Dataverse integration.
 
 ## Purpose (read this first)
 
@@ -64,7 +64,7 @@ This project follows the **bc-greenfield-template** methodology and the shared A
 | What | Value |
 |---|---|
 | Affix / prefix | **`NBC`** (one registered prefix on every object + every new field on a standard table). Descriptive **layer tag** in the name: `NBC CDS <name>` = Dataverse-base layer, `NBC CRM <name>` = D365-Sales layer, plain `NBC <name>` = Core/cross-cutting. |
-| Object ID range | `50000–99999` (PTE) |
+| Object ID range | `65000–68999` (PTE) |
 | API layer | `PageType = API` publisher **`nbc`**, version `v1.0`, per-module `APIGroup` (ownership/activities/opportunity/process/catalog/pricing/party). One API page per persisted custom table + a **new** API page per extended standard table (API pages can't be `pageextension`-ed). |
 | BC version target | `28.2.0.0` (platform `28.0.0.0`, runtime `17.0`) — dev container **`crm2802`** (Sandbox 28.2; web `http://crm2802/BC/?tenant=default`) |
 | Primary language | English (international) — single language, so getting-started docs are `getting-started-english.md` only (no `-<lang>`) |
@@ -74,7 +74,7 @@ This project follows the **bc-greenfield-template** methodology and the shared A
 
 > Symbols are downloaded locally from the `crm2802` container into `app/.alpackages` (BC 28.2). Build with the
 > extension's `alc.exe` + the four analyzers (CodeCop, AppSourceCop, UICop, PerTenantExtensionCop) against
-> `app/ruleset.json`. **Two build targets:** the default **PTE** build ships in the 50000 range; the **AppSource**
+> `app/ruleset.json`. **Two build targets:** the default **PTE** build ships in the 65000 range; the **AppSource**
 > build adds `/define:APPSOURCE` (and drops PerTenantExtensionCop) to include the `#if APPSOURCE` entitlements —
 > a PTE extension cannot contain an `entitlement` (PTE0013).
 
@@ -91,7 +91,7 @@ assistant's machine-local memory).
 - **No Dataverse.** No CRM connector, no `CRM *`/`CDS *` proxy tables, no Integration Table Mapping, no coupling. We reimplement the *behaviour*, natively.
 - **Extend, never edit base** — tableextension/pageextension/enumextension + event subscribers (pure-proxy codeunits).
 - **Use BC's models** — Dimensions, Price Lists, Dimension Set, standard posting routines; build CRM on Contact/RM.
-- **Mandatory affix `NBC`** on every new object and every new field on a standard table (+ layer tag `CDS`/`CRM` in the name). **Object IDs** inside 50000–99999. **Zero CodeCop errors** on build.
+- **Mandatory affix `NBC`** on every new object and every new field on a standard table (+ layer tag `CDS`/`CRM` in the name). **Object IDs** inside 65000–68999 (tests 69000–69999) — this app's block in the PTE range shared by all the owner's apps, which must install side by side; never use IDs outside it (registry: bc-dev-templates). **Zero CodeCop errors** on build.
 - **ISV/AppSource discipline** — upgrade-safe (ObsoleteState/data-upgrade, never break shipped data), each sellable module gets its own permission set(s) (**≤20-char** names) + entitlement, telemetry on key transactions, Feature Management (setup table + `Enabled` toggle + per-feature `ApplicationArea`) on every feature.
 - **Test + document each segment as you build it** — no batching to the end.
 - **Run the `feature-ready` checklist as a GATE before calling any feature done** — `../bc-dev-templates/bc-greenfield-template/checklists/feature-ready.md`. This is a hard rule because ignoring it *already* let three whole classes of work slip across Tiers 0–3 (API pages, getting-started docs, feature setup/toggle+gating) — "compiles green + tech doc + unit test" is **not** done. Do not treat the existing repo's precedent as the definition of done; the checklist is.

@@ -1,7 +1,7 @@
 namespace NBC.CRM.Catalog;
 
 /// <summary>List of seller-facing product relationships (cross-sell / up-sell / accessory / substitute).</summary>
-page 50093 "NBC CRM Product Relations"
+page 65093 "NBC CRM Product Relations"
 {
     PageType = List;
     ApplicationArea = NBCCatalog;

@@ -9,7 +9,7 @@ using NBC.Dataverse.Ownership;
 /// apps (and tests) can substitute behaviour without editing the subscription. See the
 /// polymorphic-table-logic pattern in the shared templates.
 /// </summary>
-codeunit 50000 "NBC Service Locator"
+codeunit 65000 "NBC Service Locator"
 {
     Access = Public;
     SingleInstance = true;

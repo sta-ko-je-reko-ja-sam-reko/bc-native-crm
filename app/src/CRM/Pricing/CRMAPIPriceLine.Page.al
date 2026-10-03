@@ -7,7 +7,7 @@ using Microsoft.Pricing.PriceList;
 /// scratch — the meaningful price-line fields (so integrations/MCP see the whole line) plus the CRM pricing-
 /// flexibility affix fields. A NEW page, not a pageextension (API pages can't be extended).
 /// </summary>
-page 50129 "NBC CRM API Price Line"
+page 65129 "NBC CRM API Price Line"
 {
     PageType = API;
     APIPublisher = 'nbc';

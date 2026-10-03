@@ -1,7 +1,7 @@
 namespace NBC.Onboarding;
 
 /// <summary>Permissions for the per-feature Assisted Setup wizards and their Guided Experience registration.</summary>
-permissionset 50184 "NBC Onboarding"
+permissionset 65184 "NBC Onboarding"
 {
     Caption = 'CRM Onboarding';
     Assignable = true;

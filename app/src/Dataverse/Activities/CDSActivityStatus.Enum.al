@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Lifecycle status of a CRM activity.</summary>
-enum 50031 "NBC CDS Activity Status"
+enum 65031 "NBC CDS Activity Status"
 {
     Extensible = true;
     Caption = 'CRM Activity Status';

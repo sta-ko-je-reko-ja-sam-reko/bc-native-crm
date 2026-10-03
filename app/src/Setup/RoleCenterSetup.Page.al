@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for the Role Center — turn the feature on or off.</summary>
-page 50135 "NBC Role Center Setup"
+page 65135 "NBC Role Center Setup"
 {
     PageType = Card;
     ApplicationArea = All;

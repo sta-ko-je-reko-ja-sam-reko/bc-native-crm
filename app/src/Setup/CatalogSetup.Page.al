@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for the Product Catalog — turn the feature on or off.</summary>
-page 50137 "NBC Catalog Setup"
+page 65137 "NBC Catalog Setup"
 {
     PageType = Card;
     ApplicationArea = All;

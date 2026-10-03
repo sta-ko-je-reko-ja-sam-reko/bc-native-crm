@@ -4,7 +4,7 @@ using Microsoft.Inventory.Item;
 using Microsoft.Projects.Resources.Resource;
 
 /// <summary>A component (item/resource) of a CRM bundle, with a required/optional flag.</summary>
-table 50092 "NBC CRM Bundle Line"
+table 65092 "NBC CRM Bundle Line"
 {
     Caption = 'CRM Bundle Line';
     DataClassification = CustomerContent;

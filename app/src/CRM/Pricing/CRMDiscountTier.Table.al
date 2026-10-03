@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>A quantity band (min..max) and its value within a reusable discount list.</summary>
-table 50101 "NBC CRM Discount Tier"
+table 65101 "NBC CRM Discount Tier"
 {
     Caption = 'CRM Discount Tier';
     DataClassification = CustomerContent;

@@ -11,7 +11,7 @@ using NBC.Core;
 /// object id — never instantiates our own object) gates entitlement, then the owner reaction runs only for entitled
 /// users. Both are resolved through the Service Locator, so the guard and the reaction are independently swappable.
 /// </summary>
-codeunit 50023 "NBC CDS Owner Subscribers"
+codeunit 65023 "NBC CDS Owner Subscribers"
 {
     SingleInstance = true;
 

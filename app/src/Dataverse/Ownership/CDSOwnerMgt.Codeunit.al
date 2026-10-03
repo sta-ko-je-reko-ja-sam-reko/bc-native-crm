@@ -11,7 +11,7 @@ using System.Security.User;
 /// Salesperson), stamps default owners, evaluates ownership, and builds the "my records"
 /// convenience filter. See FEAT-OWN-001 for the row-level-security scope decision.
 /// </summary>
-codeunit 50020 "NBC CDS Owner Mgt."
+codeunit 65020 "NBC CDS Owner Mgt."
 {
     Access = Public;
 

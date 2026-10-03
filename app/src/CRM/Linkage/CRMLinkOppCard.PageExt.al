@@ -8,7 +8,7 @@ using NBC.Setup;
 /// drill-down actions. Gated by the Linkage feature. A second pageextension on the card (the Opportunity feature
 /// owns the first).
 /// </summary>
-pageextension 50145 "NBC CRM Link Opp. Card" extends "Opportunity Card"
+pageextension 65145 "NBC CRM Link Opp. Card" extends "Opportunity Card"
 {
     layout
     {

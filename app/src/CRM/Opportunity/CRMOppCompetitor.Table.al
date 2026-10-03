@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>A competitor on a CRM opportunity.</summary>
-table 50041 "NBC CRM Opp. Competitor"
+table 65041 "NBC CRM Opp. Competitor"
 {
     Caption = 'CRM Opportunity Competitor';
     DataClassification = CustomerContent;

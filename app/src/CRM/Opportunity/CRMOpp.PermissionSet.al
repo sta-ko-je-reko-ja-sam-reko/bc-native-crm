@@ -10,7 +10,7 @@ using NBC.Dataverse.Ownership;
 using NBC.Setup;
 
 /// <summary>Permissions for the CRM opportunity-depth objects.</summary>
-permissionset 50040 "NBC CRM Opp."
+permissionset 65040 "NBC CRM Opp."
 {
     Caption = 'CRM Opportunities';
     Assignable = true;

@@ -7,7 +7,7 @@ using Microsoft.CRM.Opportunity;
 /// record by SubPageLink; reads the host identity from the applied filter range (so it works even
 /// before a state row exists) and renders / drives the process bar.
 /// </summary>
-page 50063 "NBC CRM Process Bar Part"
+page 65063 "NBC CRM Process Bar Part"
 {
     PageType = CardPart;
     ApplicationArea = NBCProcess;

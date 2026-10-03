@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Default implementation of CRM IOpportunityLine — line lookup and amount calc.</summary>
-codeunit 50040 "NBC CRM Opp. Line Logic" implements "NBC CRM IOpportunityLine"
+codeunit 65040 "NBC CRM Opp. Line Logic" implements "NBC CRM IOpportunityLine"
 {
     Access = Public;
 

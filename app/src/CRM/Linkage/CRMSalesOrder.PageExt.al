@@ -7,7 +7,7 @@ using NBC.Setup;
 /// Surfaces the pipeline link, CRM sales status and lifecycle actions on the Sales Order, gated by the Linkage
 /// feature. BC's own Status, posting and fulfillment are untouched.
 /// </summary>
-pageextension 50143 "NBC CRM Sales Order" extends "Sales Order"
+pageextension 65143 "NBC CRM Sales Order" extends "Sales Order"
 {
     layout
     {

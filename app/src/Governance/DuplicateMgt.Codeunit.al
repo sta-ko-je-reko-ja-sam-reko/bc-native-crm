@@ -4,7 +4,7 @@ using Microsoft.CRM.Contact;
 using Microsoft.Sales.Customer;
 
 /// <summary>Finds Customers/Contacts that share the same name (BC has no native customer dedup).</summary>
-codeunit 50081 "NBC Duplicate Mgt."
+codeunit 65081 "NBC Duplicate Mgt."
 {
     Access = Public;
 

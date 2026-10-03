@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Minimal shared source table for the demo-import API pages. The import pages exist for their [ServiceEnabled]
 /// ImportDemoData action (the MCP tool), not for their rows — this dummy table is just a valid SourceTable.
 /// </summary>
-table 50160 "NBC Demo Data"
+table 65160 "NBC Demo Data"
 {
     Caption = 'Demo Data';
     DataClassification = SystemMetadata;

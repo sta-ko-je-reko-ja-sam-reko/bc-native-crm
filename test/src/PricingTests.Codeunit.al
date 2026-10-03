@@ -3,7 +3,7 @@ namespace NBC.Test;
 using NBC.CRM.Pricing;
 
 /// <summary>Unit tests for CRM pricing logic — method derivation, rounding and discounts (no DB).</summary>
-codeunit 50905 "NBC CRM Pricing Tests"
+codeunit 69005 "NBC CRM Pricing Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

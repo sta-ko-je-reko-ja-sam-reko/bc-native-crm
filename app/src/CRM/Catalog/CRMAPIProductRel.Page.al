@@ -3,7 +3,7 @@ namespace NBC.CRM.Catalog;
 using NBC.Setup;
 
 /// <summary>API page exposing CRM product relationships for integration, Power Platform and MCP tooling.</summary>
-page 50121 "NBC CRM API Product Rel."
+page 65121 "NBC CRM API Product Rel."
 {
     PageType = API;
     APIPublisher = 'nbc';

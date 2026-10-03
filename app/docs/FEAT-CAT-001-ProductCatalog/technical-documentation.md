@@ -56,12 +56,12 @@ relationships** (BC has only functional *substitutes*).
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50091 | NBC CRM Bundle | No. | Code[20] | PK |
+| 65091 | NBC CRM Bundle | No. | Code[20] | PK |
 | | | Description | Text[100] | |
 | | | Unit Price | Decimal | bundle sold-as-one price |
 | | | Catalog Status | Enum "NBC CRM Catalog Status" | Draft/Active/Retired |
 | | | Component Total | Decimal | FlowField sum of lines |
-| 50092 | NBC CRM Bundle Line | Bundle No. | Code[20] | PK1, TableRelation Bundle |
+| 65092 | NBC CRM Bundle Line | Bundle No. | Code[20] | PK1, TableRelation Bundle |
 | | | Line No. | Integer | PK2 |
 | | | Component Type | Enum "NBC CRM Catalog Item Type" | Item/Resource |
 | | | No. | Code[20] | TableRelation by type |
@@ -70,7 +70,7 @@ relationships** (BC has only functional *substitutes*).
 | | | Unit Price | Decimal | |
 | | | Line Amount | Decimal | Quantity × Unit Price |
 | | | Required | Boolean | required vs optional component |
-| 50090 | NBC CRM Product Rel. | From Type | Enum "NBC CRM Catalog Item Type" | PK1 |
+| 65090 | NBC CRM Product Rel. | From Type | Enum "NBC CRM Catalog Item Type" | PK1 |
 | | | From No. | Code[20] | PK2 |
 | | | Relationship Type | Enum "NBC CRM Product Rel. Type" | PK3 |
 | | | To Type | Enum "NBC CRM Catalog Item Type" | PK4 |
@@ -81,34 +81,34 @@ relationships** (BC has only functional *substitutes*).
 ### New Fields on Existing Tables
 | Object | Field ID | Field | Type |
 |---|---|---|---|
-| Item (27) | 50090 | NBC CRM Catalog Status | Enum "NBC CRM Catalog Status" |
-| Item (27) | 50091 | NBC CRM Valid From | Date |
-| Item (27) | 50092 | NBC CRM Valid To | Date |
-| Item (27) | 50093 | NBC CRM Default Price List | Code[20] |
-| Resource (156) | 50090..50093 | (same four fields) | |
+| Item (27) | 65090 | NBC CRM Catalog Status | Enum "NBC CRM Catalog Status" |
+| Item (27) | 65091 | NBC CRM Valid From | Date |
+| Item (27) | 65092 | NBC CRM Valid To | Date |
+| Item (27) | 65093 | NBC CRM Default Price List | Code[20] |
+| Resource (156) | 65090..65093 | (same four fields) | |
 
 ## Objects
 
 | Type | ID | Name |
 |---|---|---|
-| enum | 50090 | NBC CRM Catalog Status |
-| enum | 50091 | NBC CRM Product Rel. Type |
-| enum | 50092 | NBC CRM Catalog Item Type |
-| table | 50090 | NBC CRM Product Rel. |
-| table | 50091 | NBC CRM Bundle |
-| table | 50092 | NBC CRM Bundle Line |
+| enum | 65090 | NBC CRM Catalog Status |
+| enum | 65091 | NBC CRM Product Rel. Type |
+| enum | 65092 | NBC CRM Catalog Item Type |
+| table | 65090 | NBC CRM Product Rel. |
+| table | 65091 | NBC CRM Bundle |
+| table | 65092 | NBC CRM Bundle Line |
 | interface | — | NBC CRM IBundle |
-| codeunit | 50090 | NBC CRM Catalog Mgt. |
-| codeunit | 50091 | NBC CRM Bundle Logic |
-| codeunit | 50092 | NBC CRM Bundle Mgt. |
-| tableextension | 50090 | NBC CRM Catalog Item |
-| tableextension | 50091 | NBC CRM Catalog Resource |
-| page | 50090 | NBC CRM Bundles |
-| page | 50091 | NBC CRM Bundle Card |
-| page | 50092 | NBC CRM Bundle Lines |
-| page | 50093 | NBC CRM Product Relations |
-| pageextension | 50090 | NBC CRM Catalog Item Card |
-| permissionset | 50090 | NBC CRM Catalog |
+| codeunit | 65090 | NBC CRM Catalog Mgt. |
+| codeunit | 65091 | NBC CRM Bundle Logic |
+| codeunit | 65092 | NBC CRM Bundle Mgt. |
+| tableextension | 65090 | NBC CRM Catalog Item |
+| tableextension | 65091 | NBC CRM Catalog Resource |
+| page | 65090 | NBC CRM Bundles |
+| page | 65091 | NBC CRM Bundle Card |
+| page | 65092 | NBC CRM Bundle Lines |
+| page | 65093 | NBC CRM Product Relations |
+| pageextension | 65090 | NBC CRM Catalog Item Card |
+| permissionset | 65090 | NBC CRM Catalog |
 
 ## Integration Points
 

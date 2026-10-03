@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Transaction Pipeline Linkage feature.</summary>
-table 50139 "NBC Linkage Setup"
+table 65139 "NBC Linkage Setup"
 {
     Caption = 'Pipeline Linkage Setup';
     DataClassification = CustomerContent;

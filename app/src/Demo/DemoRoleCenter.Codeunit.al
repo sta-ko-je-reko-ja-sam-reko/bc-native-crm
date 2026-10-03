@@ -10,7 +10,7 @@ using System.Security.User;
 /// exists, so the cues actually populate the first time the user opens the CRM Salesperson role
 /// center. Idempotent: only stamps a salesperson when the field is blank; safe to re-run.
 /// </summary>
-codeunit 50166 "NBC Demo Role Center"
+codeunit 65166 "NBC Demo Role Center"
 {
     Access = Public;
 

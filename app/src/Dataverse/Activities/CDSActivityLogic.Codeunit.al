@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Default implementation of CRM IActivity — activity trigger/validation logic.</summary>
-codeunit 50031 "NBC CDS Activity Logic" implements "NBC CDS IActivity"
+codeunit 65031 "NBC CDS Activity Logic" implements "NBC CDS IActivity"
 {
     Access = Public;
 

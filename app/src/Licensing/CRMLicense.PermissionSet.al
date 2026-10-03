@@ -16,7 +16,7 @@ using NBC.Onboarding;
 /// product catalog and pricing flexibility. Granted by the <see cref="NBC CRM Ent"/> entitlement.
 /// Compiled only in the AppSource build (APPSOURCE).
 /// </summary>
-permissionset 50111 "NBC CRM License"
+permissionset 65111 "NBC CRM License"
 {
     Caption = 'CRM Sales License';
     Assignable = false;

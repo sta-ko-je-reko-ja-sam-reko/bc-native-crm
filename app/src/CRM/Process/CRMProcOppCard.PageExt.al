@@ -4,7 +4,7 @@ using Microsoft.CRM.Opportunity;
 using NBC.Setup;
 
 /// <summary>Places the CRM process-flow stage bar at the top of the Opportunity Card, gated by the Process feature.</summary>
-pageextension 50060 "NBC CRM Proc. Opp. Card" extends "Opportunity Card"
+pageextension 65060 "NBC CRM Proc. Opp. Card" extends "Opportunity Card"
 {
     layout
     {

@@ -6,7 +6,7 @@ using NBC.Dataverse.Ownership;
 using NBC.Setup;
 
 /// <summary>Adds the CRM activity Timeline FactBox and activity actions to the Customer Card, gated by the Activities feature.</summary>
-pageextension 50030 "NBC CDS Act. Customer Card" extends "Customer Card"
+pageextension 65030 "NBC CDS Act. Customer Card" extends "Customer Card"
 {
     layout
     {

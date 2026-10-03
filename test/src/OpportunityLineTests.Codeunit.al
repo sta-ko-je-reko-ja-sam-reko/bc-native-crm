@@ -3,7 +3,7 @@ namespace NBC.Test;
 using NBC.CRM.Opportunity;
 
 /// <summary>Unit tests for CRM Opportunity Line Logic — pure amount calculation (no DB).</summary>
-codeunit 50902 "NBC CRM Opp. Line Tests"
+codeunit 69002 "NBC CRM Opp. Line Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

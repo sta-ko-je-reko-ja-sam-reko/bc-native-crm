@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>The toggleable features of the CRM product — one value per feature setup / application area.</summary>
-enum 50130 "NBC Feature"
+enum 65130 "NBC Feature"
 {
     Extensible = true;
     Caption = 'CRM Feature';

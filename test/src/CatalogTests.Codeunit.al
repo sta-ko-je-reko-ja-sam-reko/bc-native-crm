@@ -3,7 +3,7 @@ namespace NBC.Test;
 using NBC.CRM.Catalog;
 
 /// <summary>Unit tests for CRM catalog logic — bundle amount calc and sellability gate (no DB).</summary>
-codeunit 50904 "NBC CRM Catalog Tests"
+codeunit 69004 "NBC CRM Catalog Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

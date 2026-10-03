@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Business Process Flow — turn the feature on or off.</summary>
-page 50134 "NBC Process Setup"
+page 65134 "NBC Process Setup"
 {
     PageType = Card;
     ApplicationArea = All;

@@ -7,7 +7,7 @@ using NBC.Core;
 using System.Security.User;
 
 /// <summary>Card for a CRM Team, with its members.</summary>
-page 50021 "NBC CDS Team Card"
+page 65021 "NBC CDS Team Card"
 {
     PageType = Card;
     ApplicationArea = NBCOwnership;

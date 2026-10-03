@@ -22,7 +22,7 @@ salesperson) and navigation to the CRM pages.
 
 | Table | Field | Type | Notes |
 |---|---|---|---|
-| NBC CRM Cue (50070) | Primary Key | Code[10] | singleton |
+| NBC CRM Cue (65070) | Primary Key | Code[10] | singleton |
 | | Owner Code Filter / Salesperson Code Filter | Code[20] | FlowFilter |
 | | Overdue Before Filter | Date | FlowFilter |
 | | My Open Activities | Integer | FlowField count(NBC CDS Activity, Owner+Open) |
@@ -34,13 +34,13 @@ salesperson) and navigation to the CRM pages.
 
 | Type | ID | Name |
 |---|---|---|
-| table | 50070 | NBC CRM Cue |
-| codeunit | 50070 | NBC CRM Cue Mgt. |
-| page | 50070 | NBC CRM Role Center (RoleCenter) |
-| page | 50071 | NBC CRM Activity Cues (CardPart) |
-| page | 50072 | NBC CRM Sales Cues (CardPart) |
+| table | 65070 | NBC CRM Cue |
+| codeunit | 65070 | NBC CRM Cue Mgt. |
+| page | 65070 | NBC CRM Role Center (RoleCenter) |
+| page | 65071 | NBC CRM Activity Cues (CardPart) |
+| page | 65072 | NBC CRM Sales Cues (CardPart) |
 | profile | — | NBC CRM Salesperson |
-| permissionset | 50070 | NBC CRM Role Center |
+| permissionset | 65070 | NBC CRM Role Center |
 
 ## Known Limitations
 

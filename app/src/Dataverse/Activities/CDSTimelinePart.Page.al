@@ -9,7 +9,7 @@ using NBC.Dataverse.Ownership;
 /// record by SubPageLink (Regarding Table No. + Regarding System ID), so it follows the current
 /// record without needing a page trigger on the host card.
 /// </summary>
-page 50032 "NBC CDS Timeline Part"
+page 65032 "NBC CDS Timeline Part"
 {
     PageType = CardPart;
     ApplicationArea = NBCActivities;

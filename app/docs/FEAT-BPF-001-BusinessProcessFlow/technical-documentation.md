@@ -38,14 +38,14 @@ on the Opportunity Card.
 ### New Tables
 | # | Table | Field | Type | Notes |
 |---|---|---|---|---|
-| 50060 | CRM Process | Code | Code[20] | PK |
+| 65060 | CRM Process | Code | Code[20] | PK |
 | | | Name | Text[100] | |
 | | | Table No. | Integer | entity the process applies to |
 | | | Active | Boolean | one active process per table is used |
-| 50061 | CRM Process Stage | Process Code | Code[20] | PK1, TableRelation CRM Process |
+| 65061 | CRM Process Stage | Process Code | Code[20] | PK1, TableRelation CRM Process |
 | | | Stage No. | Integer | PK2, order |
 | | | Name | Text[100] | |
-| 50062 | CRM Process State | Table No. | Integer | PK1 |
+| 65062 | CRM Process State | Table No. | Integer | PK1 |
 | | | Record System ID | Guid | PK2 |
 | | | Process Code | Code[20] | TableRelation CRM Process |
 | | | Current Stage No. | Integer | 0 = not started |
@@ -55,18 +55,18 @@ on the Opportunity Card.
 
 | Type | ID | Name |
 |---|---|---|
-| table | 50060 | CRM Process |
-| table | 50061 | CRM Process Stage |
-| table | 50062 | CRM Process State |
-| codeunit | 50060 | CRM Process Mgt. |
-| codeunit | 50061 | CRM Process Install |
+| table | 65060 | CRM Process |
+| table | 65061 | CRM Process Stage |
+| table | 65062 | CRM Process State |
+| codeunit | 65060 | CRM Process Mgt. |
+| codeunit | 65061 | CRM Process Install |
 | controladdin | — | CRM Process Bar |
-| page | 50060 | CRM Processes |
-| page | 50061 | CRM Process Card |
-| page | 50062 | CRM Process Stages |
-| page | 50063 | CRM Process Bar Part |
-| pageextension | 50060 | CRM Proc. Opportunity Card |
-| permissionset | 50060 | CRM Processes |
+| page | 65060 | CRM Processes |
+| page | 65061 | CRM Process Card |
+| page | 65062 | CRM Process Stages |
+| page | 65063 | CRM Process Bar Part |
+| pageextension | 65060 | CRM Proc. Opportunity Card |
+| permissionset | 65060 | CRM Processes |
 
 ## Integration Points
 

@@ -3,7 +3,7 @@ namespace NBC.CRM.Catalog;
 using NBC.Setup;
 
 /// <summary>Permissions for the CRM product sales-catalog objects.</summary>
-permissionset 50090 "NBC CRM Catalog"
+permissionset 65090 "NBC CRM Catalog"
 {
     Caption = 'CRM Catalog';
     Assignable = true;

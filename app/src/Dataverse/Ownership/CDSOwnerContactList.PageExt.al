@@ -8,7 +8,7 @@ using NBC.Setup;
 using System.Security.User;
 
 /// <summary>Owner column + "my CRM records" scoping on the Contact List, gated by the Ownership feature.</summary>
-pageextension 50023 "NBC CDS Owner Contact List" extends "Contact List"
+pageextension 65023 "NBC CDS Owner Contact List" extends "Contact List"
 {
     layout
     {

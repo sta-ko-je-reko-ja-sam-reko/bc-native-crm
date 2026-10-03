@@ -15,7 +15,7 @@ using NBC.CRM.Process;
 /// referenced opportunity is defensively Get-guarded (falling back to the first opportunity in the company,
 /// and exiting quietly when none exists).
 /// </summary>
-codeunit 50165 "NBC Demo Process"
+codeunit 65165 "NBC Demo Process"
 {
     Access = Public;
 

@@ -33,28 +33,28 @@ entities:
 ### New Fields on Existing Tables
 | Object | Field ID | Field | Type | Notes |
 |---|---|---|---|---|
-| Customer | 50050 | CRM Parent Customer No. | Code[20] | TableRelation Customer (self) |
-| Customer | 50051 | CRM Industry Group Code | Code[10] | TableRelation "Industry Group" |
-| Customer | 50052 | CRM Annual Revenue | Decimal | firmographic |
-| Customer | 50053 | CRM No. of Employees | Integer | firmographic |
-| Customer | 50054 | CRM Preferred Contact Method | Enum "CRM Pref. Contact Method" | |
-| Customer | 50055 | CRM Do Not Email | Boolean | consent |
-| Customer | 50056 | CRM Do Not Phone | Boolean | consent |
-| Customer | 50057 | CRM Do Not Bulk Email | Boolean | consent |
-| Contact | 50054 | CRM Preferred Contact Method | Enum "CRM Pref. Contact Method" | |
-| Contact | 50055 | CRM Do Not Email | Boolean | consent |
-| Contact | 50056 | CRM Do Not Phone | Boolean | consent |
-| Contact | 50057 | CRM Do Not Bulk Email | Boolean | consent |
+| Customer | 65050 | CRM Parent Customer No. | Code[20] | TableRelation Customer (self) |
+| Customer | 65051 | CRM Industry Group Code | Code[10] | TableRelation "Industry Group" |
+| Customer | 65052 | CRM Annual Revenue | Decimal | firmographic |
+| Customer | 65053 | CRM No. of Employees | Integer | firmographic |
+| Customer | 65054 | CRM Preferred Contact Method | Enum "CRM Pref. Contact Method" | |
+| Customer | 65055 | CRM Do Not Email | Boolean | consent |
+| Customer | 65056 | CRM Do Not Phone | Boolean | consent |
+| Customer | 65057 | CRM Do Not Bulk Email | Boolean | consent |
+| Contact | 65054 | CRM Preferred Contact Method | Enum "CRM Pref. Contact Method" | |
+| Contact | 65055 | CRM Do Not Email | Boolean | consent |
+| Contact | 65056 | CRM Do Not Phone | Boolean | consent |
+| Contact | 65057 | CRM Do Not Bulk Email | Boolean | consent |
 
 ## Objects
 
 | Type | ID | Name |
 |---|---|---|
-| enum | 50050 | CRM Pref. Contact Method |
-| tableextension | 50050 | CRM Enrich Customer |
-| tableextension | 50051 | CRM Enrich Contact |
-| pageextension | 50050 | CRM Enrich Customer Card |
-| pageextension | 50051 | CRM Enrich Contact Card |
+| enum | 65050 | CRM Pref. Contact Method |
+| tableextension | 65050 | CRM Enrich Customer |
+| tableextension | 65051 | CRM Enrich Contact |
+| pageextension | 65050 | CRM Enrich Customer Card |
+| pageextension | 65051 | CRM Enrich Contact Card |
 
 ## Files
 

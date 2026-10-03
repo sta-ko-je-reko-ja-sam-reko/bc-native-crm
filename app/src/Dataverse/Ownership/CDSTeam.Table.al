@@ -10,7 +10,7 @@ using System.Security.User;
 /// A CRM Team — a group of salespersons that can own records collectively.
 /// Native reimplementation of the Dataverse team as a record-owning principal.
 /// </summary>
-table 50020 "NBC CDS Team"
+table 65020 "NBC CDS Team"
 {
     Caption = 'CRM Team';
     DataClassification = CustomerContent;

@@ -15,7 +15,7 @@ using System.MCP;
 /// module group. Uses the public facade codeunit 8350 "MCP Config" (never writes the MCP tables directly).
 /// NOT auto-run — an admin invokes SeedModuleConfigurations (intended to sit behind an Assisted Setup).
 /// </summary>
-codeunit 50110 "NBC MCP Setup"
+codeunit 65110 "NBC MCP Setup"
 {
     Access = Public;
 

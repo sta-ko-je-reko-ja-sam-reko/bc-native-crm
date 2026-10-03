@@ -15,7 +15,7 @@ using NBC.Dataverse.Ownership;
 /// All CRONUS references are Get-guarded; missing references cause the affected row to be skipped,
 /// never an error. Re-running Import() is a no-op for rows that already exist (fixed keys + Get).
 /// </summary>
-codeunit 50164 "NBC Demo Opportunity"
+codeunit 65164 "NBC Demo Opportunity"
 {
     Access = Public;
 
@@ -58,9 +58,9 @@ codeunit 50164 "NBC Demo Opportunity"
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Opp. Line");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Opp. Competitor");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Opp. Stakeholder");
-        AffixFieldNos.Add(50040);
-        AffixFieldNos.Add(50041);
-        AffixFieldNos.Add(50042);
+        AffixFieldNos.Add(65040);
+        AffixFieldNos.Add(65041);
+        AffixFieldNos.Add(65042);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Opportunity, AffixFieldNos);
     end;
 

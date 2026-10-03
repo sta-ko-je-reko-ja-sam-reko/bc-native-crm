@@ -46,7 +46,7 @@ file into the GitHub Copilot agent you connect to that configuration, and it kno
 ## Architecture & conventions
 
 - **Pure AL extension** — extend base via `tableextension` / `pageextension` / `enumextension` + event subscribers; never edit base.
-- **Affix `NBC`** on every object and every added field; object IDs in the **PTE range 50000–99999**.
+- **Affix `NBC`** on every object and every added field; object IDs in the **PTE range 65000–68999**.
 - **House patterns** — polymorphic table-logic (swappable interface impls behind a Service Locator), pure-proxy event subscribers, a swappable effective-permission access policy, ToolTips on table fields, JS control add-ins for the timeline and process bar.
 - **Feature Management** — every feature ships a single-record setup + `Enabled` toggle + a dedicated `ApplicationArea`, so it can be turned on/off per tenant.
 - **AppSource discipline** — three cumulative entitlements (Core ⊂ CDS ⊂ CRM), upgrade-safe objects, per-module permission sets. Two build targets: **PTE** (default) and **AppSource** (`alc /define:APPSOURCE`).

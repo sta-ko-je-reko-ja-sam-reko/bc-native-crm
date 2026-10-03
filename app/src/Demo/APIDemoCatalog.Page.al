@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Product Sales Catalog feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool;
 /// in its own API group (demoCatalog) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50178 "NBC API Demo Catalog"
+page 65178 "NBC API Demo Catalog"
 {
     PageType = API;
     APIPublisher = 'nbc';

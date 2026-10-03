@@ -9,7 +9,7 @@ using NBC.Demo;
 /// lists/tiers) are self-contained (no CRONUS master-data dependency), so it runs in any test company. Relies on
 /// the test runner's rollback.
 /// </summary>
-codeunit 50907 "NBC Demo Data Tests"
+codeunit 69007 "NBC Demo Data Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

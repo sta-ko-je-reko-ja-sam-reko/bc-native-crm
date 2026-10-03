@@ -4,7 +4,7 @@ using Microsoft.Inventory.Item;
 using NBC.Setup;
 
 /// <summary>CRM catalog group (lifecycle, sell window) + Related Products action on the Item Card, gated by the Catalog feature.</summary>
-pageextension 50090 "NBC CRM Catalog Item Card" extends "Item Card"
+pageextension 65090 "NBC CRM Catalog Item Card" extends "Item Card"
 {
     layout
     {

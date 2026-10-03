@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Transaction Pipeline Linkage feature. Its [ServiceEnabled] ImportDemoData action is the
 /// MCP tool; in its own API group (demoLinkage) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50180 "NBC API Demo Linkage"
+page 65180 "NBC API Demo Linkage"
 {
     PageType = API;
     APIPublisher = 'nbc';

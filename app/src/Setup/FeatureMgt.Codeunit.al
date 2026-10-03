@@ -12,7 +12,7 @@ using System.Environment.Configuration;
 /// MS Effective Permissions Mgt., never by instantiating our own — possibly unlicensed — table), so a user
 /// who owns only some tiers gets "false" for the rest instead of a permission error.
 /// </summary>
-codeunit 50120 "NBC Feature Mgt."
+codeunit 65120 "NBC Feature Mgt."
 {
     Access = Public;
     SingleInstance = true;

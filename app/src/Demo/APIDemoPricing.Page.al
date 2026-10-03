@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Pricing Flexibility feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool;
 /// in its own API group (demoPricing) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50179 "NBC API Demo Pricing"
+page 65179 "NBC API Demo Pricing"
 {
     PageType = API;
     APIPublisher = 'nbc';

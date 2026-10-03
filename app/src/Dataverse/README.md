@@ -13,4 +13,4 @@ Scope = the CDS-base entities (see [architecture.md §2](../../../.claude/skills
 
 Apply the decision framework in the project [CLAUDE.md](../../../CLAUDE.md) (no-diff → nothing; minor → tableext/pageext
 under a **CRM** group / action category; large → custom entity; un-renderable-but-useful graphics → JS control add-in).
-Affix `CRM`, IDs 50000–99999. Group features in subfolders here (`app/src/Dataverse/<Feature>/`).
+Affix `NBC` (layer tag `CDS`), IDs 65000–68999. Group features in subfolders here (`app/src/Dataverse/<Feature>/`).

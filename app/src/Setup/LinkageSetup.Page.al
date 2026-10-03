@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Transaction Pipeline Linkage — turn the feature on or off.</summary>
-page 50139 "NBC Linkage Setup"
+page 65139 "NBC Linkage Setup"
 {
     PageType = Card;
     ApplicationArea = All;

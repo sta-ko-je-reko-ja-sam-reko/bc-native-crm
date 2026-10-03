@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Pricing Flexibility feature.</summary>
-table 50138 "NBC Pricing Setup"
+table 65138 "NBC Pricing Setup"
 {
     Caption = 'Pricing Setup';
     DataClassification = CustomerContent;

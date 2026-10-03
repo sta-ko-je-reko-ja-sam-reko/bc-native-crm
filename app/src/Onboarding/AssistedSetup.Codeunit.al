@@ -8,7 +8,7 @@ using System.Media;
 /// run the guided setup — enable the feature and optionally load its sample data — without any agent/MCP. Subscribes
 /// to OnRegisterAssistedSetup so registration re-runs; skip-safe for unentitled users.
 /// </summary>
-codeunit 50183 "NBC Assisted Setup"
+codeunit 65183 "NBC Assisted Setup"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Guided Experience", OnRegisterAssistedSetup, '', true, true)]
     local procedure OnRegisterAssistedSetup()

@@ -1,7 +1,7 @@
 namespace NBC.CRM.Catalog;
 
 /// <summary>Card for a CRM bundle and its component lines.</summary>
-page 50091 "NBC CRM Bundle Card"
+page 65091 "NBC CRM Bundle Card"
 {
     PageType = Card;
     ApplicationArea = NBCCatalog;

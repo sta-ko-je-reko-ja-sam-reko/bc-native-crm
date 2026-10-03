@@ -10,7 +10,7 @@ using NBC.Dataverse.Activities;
 /// covering every enum value of Activity Type / Status / Priority / Direction at least once.
 /// Re-running is safe: each row is guarded by its distinctive demo Subject.
 /// </summary>
-codeunit 50162 "NBC Demo Activities"
+codeunit 65162 "NBC Demo Activities"
 {
     Access = Public;
 

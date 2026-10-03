@@ -10,8 +10,8 @@
   "runtime": "15.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 99999
+      "from": 69000,
+      "to": 69999
     }
   ],
   "dependencies": [

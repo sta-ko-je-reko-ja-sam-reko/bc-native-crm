@@ -5,7 +5,7 @@ using Microsoft.CRM.Setup;
 using Microsoft.Sales.Customer;
 
 /// <summary>Preferred way to contact a party — mirrors the Dataverse preferredcontactmethodcode.</summary>
-enum 50050 "NBC CDS Pref. Contact Method"
+enum 65050 "NBC CDS Pref. Contact Method"
 {
     Extensible = true;
     Caption = 'CRM Preferred Contact Method';

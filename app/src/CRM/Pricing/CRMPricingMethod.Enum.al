@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>How a price-list line derives its unit price (the Dataverse pricingmethodcode analog).</summary>
-enum 50100 "NBC CRM Pricing Method"
+enum 65100 "NBC CRM Pricing Method"
 {
     Extensible = true;
     Caption = 'CRM Pricing Method';

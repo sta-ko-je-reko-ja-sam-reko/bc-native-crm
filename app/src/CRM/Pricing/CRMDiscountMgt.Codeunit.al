@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>Reusable discount-list tier resolution. ApplyDiscount is pure (unit-testable).</summary>
-codeunit 50101 "NBC CRM Discount Mgt."
+codeunit 65101 "NBC CRM Discount Mgt."
 {
     Access = Public;
 

@@ -4,7 +4,7 @@ using Microsoft.CRM.Opportunity;
 using NBC.Dataverse.Activities;
 
 /// <summary>Singleton cue table for the CRM Role Center; FlowFields scoped by FlowFilters.</summary>
-table 50070 "NBC CRM Cue"
+table 65070 "NBC CRM Cue"
 {
     Caption = 'CRM Cue';
     DataClassification = CustomerContent;

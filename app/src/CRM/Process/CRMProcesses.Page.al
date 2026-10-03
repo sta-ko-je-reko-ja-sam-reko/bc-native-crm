@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>List of CRM processes.</summary>
-page 50060 "NBC CRM Processes"
+page 65060 "NBC CRM Processes"
 {
     PageType = List;
     ApplicationArea = NBCProcess;

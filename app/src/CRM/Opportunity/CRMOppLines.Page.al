@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Opportunity lines subpage.</summary>
-page 50040 "NBC CRM Opp. Lines"
+page 65040 "NBC CRM Opp. Lines"
 {
     PageType = ListPart;
     ApplicationArea = NBCOpportunity;

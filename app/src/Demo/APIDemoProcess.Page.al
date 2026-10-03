@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Business Process Flow feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool;
 /// in its own API group (demoProcess) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50175 "NBC API Demo Process"
+page 65175 "NBC API Demo Process"
 {
     PageType = API;
     APIPublisher = 'nbc';

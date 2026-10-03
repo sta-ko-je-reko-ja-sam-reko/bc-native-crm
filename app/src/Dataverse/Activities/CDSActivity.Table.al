@@ -9,7 +9,7 @@ using NBC.Dataverse.Ownership;
 /// A unified CRM activity (task / phone call / appointment / email / note) that can regard any
 /// record. Native reimplementation of the Dataverse activity model.
 /// </summary>
-table 50030 "NBC CDS Activity"
+table 65030 "NBC CDS Activity"
 {
     Caption = 'CRM Activity';
     DataClassification = CustomerContent;

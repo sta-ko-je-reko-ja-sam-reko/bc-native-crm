@@ -6,7 +6,7 @@ using System.Environment.Configuration;
 /// Sets each CRM feature's application area from its setup Enabled flag whenever the experience tier is
 /// recomputed (including after a setup toggle). A disabled feature's area stays off, hiding its pages.
 /// </summary>
-codeunit 50121 "NBC App Area Subscriber"
+codeunit 65121 "NBC App Area Subscriber"
 {
     Access = Internal;
 

@@ -14,7 +14,7 @@ using NBC.Dataverse.PartyEnrichment;
 /// The enrichment writes only to already-present records — every CRONUS reference is Get-guarded, so a
 /// missing demo record is skipped rather than created, and re-running simply re-sets the same values.
 /// </summary>
-codeunit 50163 "NBC Demo Party"
+codeunit 65163 "NBC Demo Party"
 {
     Access = Public;
 
@@ -56,21 +56,21 @@ codeunit 50163 "NBC Demo Party"
         if not ConfigPkg.StartPackage(PackageCodeTok, PackageNameLbl) then
             exit;
 
-        AffixFieldNos.Add(50050);
-        AffixFieldNos.Add(50051);
-        AffixFieldNos.Add(50052);
-        AffixFieldNos.Add(50053);
-        AffixFieldNos.Add(50054);
-        AffixFieldNos.Add(50055);
-        AffixFieldNos.Add(50056);
-        AffixFieldNos.Add(50057);
+        AffixFieldNos.Add(65050);
+        AffixFieldNos.Add(65051);
+        AffixFieldNos.Add(65052);
+        AffixFieldNos.Add(65053);
+        AffixFieldNos.Add(65054);
+        AffixFieldNos.Add(65055);
+        AffixFieldNos.Add(65056);
+        AffixFieldNos.Add(65057);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Customer, AffixFieldNos);
 
         Clear(AffixFieldNos);
-        AffixFieldNos.Add(50054);
-        AffixFieldNos.Add(50055);
-        AffixFieldNos.Add(50056);
-        AffixFieldNos.Add(50057);
+        AffixFieldNos.Add(65054);
+        AffixFieldNos.Add(65055);
+        AffixFieldNos.Add(65056);
+        AffixFieldNos.Add(65057);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Contact, AffixFieldNos);
     end;
 

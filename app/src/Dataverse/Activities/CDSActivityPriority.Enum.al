@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Priority of a CRM activity.</summary>
-enum 50032 "NBC CDS Activity Priority"
+enum 65032 "NBC CDS Activity Priority"
 {
     Extensible = true;
     Caption = 'CRM Activity Priority';

@@ -4,7 +4,7 @@ using Microsoft.CRM.Opportunity;
 using NBC.Setup;
 
 /// <summary>Permissions for the CRM business-process-flow objects.</summary>
-permissionset 50060 "NBC CRM Processes"
+permissionset 65060 "NBC CRM Processes"
 {
     Caption = 'CRM Processes';
     Assignable = true;

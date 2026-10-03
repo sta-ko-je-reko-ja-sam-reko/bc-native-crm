@@ -6,7 +6,7 @@ using Microsoft.Sales.Customer;
 using NBC.Setup;
 
 /// <summary>CRM preference group on the Contact Card, gated by the Party Enrichment feature.</summary>
-pageextension 50051 "NBC CDS Enrich Contact Card" extends "Contact Card"
+pageextension 65051 "NBC CDS Enrich Contact Card" extends "Contact Card"
 {
     layout
     {

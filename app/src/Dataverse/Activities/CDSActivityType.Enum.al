@@ -5,7 +5,7 @@ using Microsoft.Sales.Customer;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Kind of CRM activity — mirrors the Dataverse activity entities.</summary>
-enum 50030 "NBC CDS Activity Type"
+enum 65030 "NBC CDS Activity Type"
 {
     Extensible = true;
     Caption = 'CRM Activity Type';

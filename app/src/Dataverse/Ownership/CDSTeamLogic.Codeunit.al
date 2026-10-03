@@ -7,7 +7,7 @@ using NBC.Core;
 using System.Security.User;
 
 /// <summary>Default implementation of CRM ITeam — team/member trigger and validation logic.</summary>
-codeunit 50021 "NBC CDS Team Logic" implements "NBC CDS ITeam"
+codeunit 65021 "NBC CDS Team Logic" implements "NBC CDS ITeam"
 {
     Access = Public;
 

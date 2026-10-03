@@ -48,24 +48,24 @@ Sales Header / Sales Invoice Header** and never touch the fulfillment or account
 
 | Type | ID | Name | Namespace | Purpose |
 |---|---|---|---|---|
-| table | 50139 | NBC Linkage Setup | NBC.Setup | Single-record feature setup + `Enabled`. |
-| page | 50139 | NBC Linkage Setup | NBC.Setup | Administration card for the toggle (`ApplicationArea = All`). |
-| enum | 50140 | NBC CRM Sales Status | NBC.CRM.Linkage | Active/Submitted/Fulfilled/Canceled. |
-| enum (edit) | 50130 | NBC Feature | NBC.Setup | New `value(9; Linkage)` appended to our own feature enum. |
-| tableextension | 50130 (field 50139) | NBC App Area Setup | NBC.Setup | Adds the `NBC Linkage` application-area boolean. |
-| tableextension | 50140 | NBC CRM Sales Header | NBC.CRM.Linkage | Opportunity link + sales status + pricing-locked on Sales Header. |
-| tableextension | 50141 | NBC CRM Sales Inv. Header | NBC.CRM.Linkage | Opportunity link on the posted invoice. |
-| tableextension | 50142 | NBC CRM Link Opportunity | NBC.CRM.Linkage | Linked-orders / linked-invoices FlowField counts. |
+| table | 65139 | NBC Linkage Setup | NBC.Setup | Single-record feature setup + `Enabled`. |
+| page | 65139 | NBC Linkage Setup | NBC.Setup | Administration card for the toggle (`ApplicationArea = All`). |
+| enum | 65140 | NBC CRM Sales Status | NBC.CRM.Linkage | Active/Submitted/Fulfilled/Canceled. |
+| enum (edit) | 65130 | NBC Feature | NBC.Setup | New `value(9; Linkage)` appended to our own feature enum. |
+| tableextension | 65130 (field 65139) | NBC App Area Setup | NBC.Setup | Adds the `NBC Linkage` application-area boolean. |
+| tableextension | 65140 | NBC CRM Sales Header | NBC.CRM.Linkage | Opportunity link + sales status + pricing-locked on Sales Header. |
+| tableextension | 65141 | NBC CRM Sales Inv. Header | NBC.CRM.Linkage | Opportunity link on the posted invoice. |
+| tableextension | 65142 | NBC CRM Link Opportunity | NBC.CRM.Linkage | Linked-orders / linked-invoices FlowField counts. |
 | interface | — | NBC CRM ILinkageReactions | NBC.CRM.Linkage | Swappable posting-reaction contract. |
-| codeunit | 50141 | NBC CRM Linkage Mgt. | NBC.CRM.Linkage | Public services: set opportunity, submit/cancel, show orders/invoices. |
-| codeunit | 50142 | NBC CRM Linkage Reactions | NBC.CRM.Linkage | Default `ILinkageReactions` impl — Enabled-guarded invoice stamping. |
-| codeunit | 50143 | NBC CRM Linkage Subscribers | NBC.CRM.Linkage | Pure-proxy subscriber on `Sales-Post` → one-line delegate via Service Locator. |
-| pageextension | 50143 | NBC CRM Sales Order | NBC.CRM.Linkage | Surfaces the link/status/actions on Sales Order (gated). |
-| pageextension | 50144 | NBC CRM Posted Sales Invoice | NBC.CRM.Linkage | Surfaces the read-only opportunity link on the posted invoice (gated). |
-| pageextension | 50145 | NBC CRM Link Opp. Card | NBC.CRM.Linkage | Linked-orders/invoices cues + drill-down actions on Opportunity Card (gated). |
-| page | 50150 | NBC CRM API Sales Order | NBC.CRM.Linkage | Writable API clone of MS APIV2 sales order + affix fields (`CheckEnabled` guards). |
-| page | 50151 | NBC CRM API Sales Invoice | NBC.CRM.Linkage | Read-only API clone of MS APIV2 sales invoice + affix field. |
-| permissionset | 50140 | NBC CRM Linkage | NBC.CRM.Linkage | Module permission set; included in `NBC CRM License`. |
+| codeunit | 65141 | NBC CRM Linkage Mgt. | NBC.CRM.Linkage | Public services: set opportunity, submit/cancel, show orders/invoices. |
+| codeunit | 65142 | NBC CRM Linkage Reactions | NBC.CRM.Linkage | Default `ILinkageReactions` impl — Enabled-guarded invoice stamping. |
+| codeunit | 65143 | NBC CRM Linkage Subscribers | NBC.CRM.Linkage | Pure-proxy subscriber on `Sales-Post` → one-line delegate via Service Locator. |
+| pageextension | 65143 | NBC CRM Sales Order | NBC.CRM.Linkage | Surfaces the link/status/actions on Sales Order (gated). |
+| pageextension | 65144 | NBC CRM Posted Sales Invoice | NBC.CRM.Linkage | Surfaces the read-only opportunity link on the posted invoice (gated). |
+| pageextension | 65145 | NBC CRM Link Opp. Card | NBC.CRM.Linkage | Linked-orders/invoices cues + drill-down actions on Opportunity Card (gated). |
+| page | 65150 | NBC CRM API Sales Order | NBC.CRM.Linkage | Writable API clone of MS APIV2 sales order + affix fields (`CheckEnabled` guards). |
+| page | 65151 | NBC CRM API Sales Invoice | NBC.CRM.Linkage | Read-only API clone of MS APIV2 sales invoice + affix field. |
+| permissionset | 65140 | NBC CRM Linkage | NBC.CRM.Linkage | Module permission set; included in `NBC CRM License`. |
 
 ## Files
 
@@ -73,7 +73,7 @@ Sales Header / Sales Invoice Header** and never touch the fulfillment or account
 app/src/
 ├── Setup/
 │   ├── Feature.Enum.al                 (+ value 9 Linkage)
-│   ├── AppAreaSetup.TableExt.al         (+ field 50139 "NBC Linkage")
+│   ├── AppAreaSetup.TableExt.al         (+ field 65139 "NBC Linkage")
 │   ├── AppAreaSubscriber.Codeunit.al    (+ Linkage area line)
 │   ├── FeatureMgt.Codeunit.al           (+ Linkage case)
 │   ├── LinkageSetup.Table.al

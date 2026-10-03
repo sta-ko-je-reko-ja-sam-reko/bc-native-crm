@@ -5,7 +5,7 @@ using Microsoft.Sales.History;
 using NBC.CRM.Linkage;
 
 /// <summary>Unit tests for CRM pipeline-linkage reaction logic — pure, in-memory (no DB).</summary>
-codeunit 50906 "NBC CRM Linkage Tests"
+codeunit 69006 "NBC CRM Linkage Tests"
 {
     Subtype = Test;
     TestPermissions = Disabled;

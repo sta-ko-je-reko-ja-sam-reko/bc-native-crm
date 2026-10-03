@@ -10,7 +10,7 @@ using NBC.Core;
 /// skip-safe for unentitled users ('', true, true) and forwards a single line to the swappable reaction via the
 /// Service Locator. The reaction's first line re-checks the feature flag.
 /// </summary>
-codeunit 50143 "NBC CRM Linkage Subscribers"
+codeunit 65143 "NBC CRM Linkage Subscribers"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", OnAfterSalesInvHeaderInsert, '', true, true)]
     local procedure OnAfterSalesInvHeaderInsert(var SalesInvHeader: Record "Sales Invoice Header"; SalesHeader: Record "Sales Header")

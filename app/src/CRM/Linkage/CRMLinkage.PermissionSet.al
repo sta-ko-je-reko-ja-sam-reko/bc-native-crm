@@ -3,7 +3,7 @@ namespace NBC.CRM.Linkage;
 using NBC.Setup;
 
 /// <summary>Permissions for the transaction ↔ pipeline linkage objects.</summary>
-permissionset 50140 "NBC CRM Linkage"
+permissionset 65140 "NBC CRM Linkage"
 {
     Caption = 'CRM Pipeline Linkage';
     Assignable = true;

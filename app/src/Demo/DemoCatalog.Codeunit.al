@@ -11,7 +11,7 @@ using NBC.CRM.Catalog;
 /// Every reference to standard CRONUS master data is Get-guarded, so the seeder skips gracefully (never errors)
 /// on a non-CRONUS company. Safe to run repeatedly — fixed keys guard every insert.
 /// </summary>
-codeunit 50168 "NBC Demo Catalog"
+codeunit 65168 "NBC Demo Catalog"
 {
     Access = Public;
 
@@ -36,16 +36,16 @@ codeunit 50168 "NBC Demo Catalog"
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Bundle");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Bundle Line");
         ConfigPkg.AddOwnTable(PackageCodeTok, Database::"NBC CRM Product Rel.");
-        AffixFieldNos.Add(50090);
-        AffixFieldNos.Add(50091);
-        AffixFieldNos.Add(50092);
-        AffixFieldNos.Add(50093);
+        AffixFieldNos.Add(65090);
+        AffixFieldNos.Add(65091);
+        AffixFieldNos.Add(65092);
+        AffixFieldNos.Add(65093);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Item, AffixFieldNos);
         Clear(AffixFieldNos);
-        AffixFieldNos.Add(50090);
-        AffixFieldNos.Add(50091);
-        AffixFieldNos.Add(50092);
-        AffixFieldNos.Add(50093);
+        AffixFieldNos.Add(65090);
+        AffixFieldNos.Add(65091);
+        AffixFieldNos.Add(65092);
+        AffixFieldNos.Add(65093);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::Resource, AffixFieldNos);
     end;
 

@@ -8,7 +8,7 @@ using System.IO;
 /// opt-in). Included in the top CRM license. Data written by the seeders lands in standard and feature tables the
 /// running user already has via their functional permission sets.
 /// </summary>
-permissionset 50182 "NBC Demo"
+permissionset 65182 "NBC Demo"
 {
     Caption = 'CRM Demo Data';
     Assignable = true;

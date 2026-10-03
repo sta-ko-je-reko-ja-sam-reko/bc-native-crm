@@ -14,7 +14,7 @@ using NBC.CRM.Linkage;
 /// The orders are created but never posted. Re-running is safe: the whole Import is guarded by the demo
 /// opportunity number, so the orders are seeded at most once.
 /// </summary>
-codeunit 50170 "NBC Demo Linkage"
+codeunit 65170 "NBC Demo Linkage"
 {
     Access = Public;
 
@@ -58,12 +58,12 @@ codeunit 50170 "NBC Demo Linkage"
     begin
         if not ConfigPkg.StartPackage(PackageCodeTok, PackageNameLbl) then
             exit;
-        AffixFieldNos.Add(50140);
-        AffixFieldNos.Add(50141);
-        AffixFieldNos.Add(50142);
+        AffixFieldNos.Add(65140);
+        AffixFieldNos.Add(65141);
+        AffixFieldNos.Add(65142);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::"Sales Header", AffixFieldNos);
         Clear(AffixFieldNos);
-        AffixFieldNos.Add(50140);
+        AffixFieldNos.Add(65140);
         ConfigPkg.AddExtendedTable(PackageCodeTok, Database::"Sales Invoice Header", AffixFieldNos);
     end;
 

@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>Quantity-selling constraint on a price line (the Dataverse quantitysellingcode analog).</summary>
-enum 50103 "NBC CRM Qty. Selling"
+enum 65103 "NBC CRM Qty. Selling"
 {
     Extensible = true;
     Caption = 'CRM Quantity Selling';

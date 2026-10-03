@@ -4,7 +4,7 @@ using Microsoft.Inventory.Item;
 using Microsoft.Projects.Resources.Resource;
 
 /// <summary>Default implementation of CRM IBundle — component lookup and amount calc.</summary>
-codeunit 50091 "NBC CRM Bundle Logic" implements "NBC CRM IBundle"
+codeunit 65091 "NBC CRM Bundle Logic" implements "NBC CRM IBundle"
 {
     Access = Public;
 

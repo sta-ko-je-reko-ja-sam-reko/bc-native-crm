@@ -8,7 +8,7 @@ using NBC.Setup;
 /// Default linkage reactions. The feature <c>Enabled</c> flag is the first guard, so a disabled (or unentitled)
 /// feature does nothing during posting. Only the pipeline pointer is copied — no accounting data is touched.
 /// </summary>
-codeunit 50142 "NBC CRM Linkage Reactions" implements "NBC CRM ILinkageReactions"
+codeunit 65142 "NBC CRM Linkage Reactions" implements "NBC CRM ILinkageReactions"
 {
     Access = Public;
 

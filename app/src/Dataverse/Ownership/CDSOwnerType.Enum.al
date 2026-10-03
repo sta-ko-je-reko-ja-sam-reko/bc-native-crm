@@ -10,7 +10,7 @@ using System.Security.User;
 /// The kind of principal that owns a CRM record — mirrors the Dataverse polymorphic owner
 /// (a systemuser or a team). Here: a BC Salesperson/Purchaser or a CRM Team.
 /// </summary>
-enum 50020 "NBC CDS Owner Type"
+enum 65020 "NBC CDS Owner Type"
 {
     Extensible = true;
     Caption = 'CRM Owner Type';

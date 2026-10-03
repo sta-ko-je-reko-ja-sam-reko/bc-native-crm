@@ -5,7 +5,7 @@ using NBC.Dataverse.PartyEnrichment;
 using NBC.Setup;
 
 /// <summary>Permissions for the CRM foundation (ownership &amp; teams) objects.</summary>
-permissionset 50000 "NBC Foundation"
+permissionset 65000 "NBC Foundation"
 {
     Caption = 'CRM Foundation';
     Assignable = true;

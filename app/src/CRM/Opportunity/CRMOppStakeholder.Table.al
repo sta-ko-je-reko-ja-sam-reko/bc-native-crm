@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>A contact playing a role on a CRM opportunity (buying-group / sales-team member).</summary>
-table 50042 "NBC CRM Opp. Stakeholder"
+table 65042 "NBC CRM Opp. Stakeholder"
 {
     Caption = 'CRM Opportunity Stakeholder';
     DataClassification = CustomerContent;

@@ -7,7 +7,7 @@ Last updated: 2026-07-03 · Version `0.4.0.0` · BC 28.2 · container `crm2802`.
 
 ## What's built (all compiling green on `crm2802` symbols)
 
-Build targets: **PTE** (default, ships in 50000 range) and **AppSource** (`alc /define:APPSOURCE`, drops
+Build targets: **PTE** (default, ships in 65000 range) and **AppSource** (`alc /define:APPSOURCE`, drops
 PerTenantExtensionCop, includes the `#if APPSOURCE` entitlements). Both `exit=0`; test app `exit=0`. Tests are
 **compiled but not yet run** (no container test runner wired up).
 
@@ -30,28 +30,28 @@ Each feature has `app/docs/FEAT-*/technical-documentation.md` + `getting-started
 [`.claude/skills/dataverse-crm-integration/`](../../.claude/skills/dataverse-crm-integration/) (gap analyses + the
 Tier 0–4 "what to build" README).
 
-## Object ID map (50000-block)
+## Object ID map (65000-block)
 
 | Range | Owner |
 |---|---|
-| 50000 | Core (Service Locator, Foundation permset) |
-| 50020–50023 | Ownership |
-| 50030–50033 | Activities |
-| 50040–50043 | Opportunity |
-| 50050–50051 | Party Enrichment (tableext fields 50050–50057 on Customer/Contact) |
-| 50060–50063 | Business Process Flow |
-| 50070–50072 | Role Center (incl. `NBC CRM Cue` — see gotchas) |
-| 50080–50081 | Governance |
-| 50090–50099 | Product Catalog |
-| 50100–50109 | Pricing Flexibility |
-| 50110–50121 | Feature Mgt facade (50120), App Area subscriber (50121), MCP setup cu (50110) |
-| 50110–50129 | **API pages** (14 over custom tables + 6 over extended standard tables) |
-| 50130–50138 | Feature setup tables + setup pages; `NBC Feature` enum (50130); `NBC App Area Setup` tableext (50130) |
-| 50139–50151 | **Tier 4 Linkage** (FEAT-LNK-001): setup table/page 50139 (`NBC Linkage` app-area field 50139, `NBC Feature::Linkage`); sales-status enum + tableexts 50140–50142 (Sales Header/Sales Inv. Header/Opportunity); codeunits 50141–50143 (Mgt/Reactions/Subscribers); pageexts 50143–50145 (Sales Order/Posted Sales Invoice/Opp Card); permset 50140; **API pages 50150–50151** (`NBC CRM API Sales Order`/`Sales Invoice`) |
-| 50111–50113 | Licensing permsets (`NBC CRM/CDS/Core License`, `#if APPSOURCE`) |
-| 50160–50182 | **Demo data**: dummy `NBC Demo Data` table (50160); 10 seeder codeunits 50161–50170; master `NBC Demo Data Mgt.` (50181); 10 import API pages 50171–50180 (each its own `demo<Feature>` API group); config-package helper `NBC Demo Config Package` (codeunit 50182) + `NBC Demo` permset (50182). MCP demo configs seeded via `NBC MCP Setup.SeedDemoConfigurations()` |
-| 50183–50193 | **Onboarding**: `NBC Wizard Step` enum (50183) + `NBC Assisted Setup` registration codeunit (50183); 10 per-feature Assisted Setup wizard pages 50184–50193; `NBC Onboarding` permset (50184). Each wizard enables its feature + offers a sample-data opt-in that calls the same `NBC Demo <Feature>.Import()` |
-| 50900–50907 | Test codeunits (own block; +50906 Linkage, +50907 Demo Data idempotency) |
+| 65000 | Core (Service Locator, Foundation permset) |
+| 65020–65023 | Ownership |
+| 65030–65033 | Activities |
+| 65040–65043 | Opportunity |
+| 65050–65051 | Party Enrichment (tableext fields 65050–65057 on Customer/Contact) |
+| 65060–65063 | Business Process Flow |
+| 65070–65072 | Role Center (incl. `NBC CRM Cue` — see gotchas) |
+| 65080–65081 | Governance |
+| 65090–65099 | Product Catalog |
+| 65100–65109 | Pricing Flexibility |
+| 65110–65121 | Feature Mgt facade (65120), App Area subscriber (65121), MCP setup cu (65110) |
+| 65110–65129 | **API pages** (14 over custom tables + 6 over extended standard tables) |
+| 65130–65138 | Feature setup tables + setup pages; `NBC Feature` enum (65130); `NBC App Area Setup` tableext (65130) |
+| 65139–65151 | **Tier 4 Linkage** (FEAT-LNK-001): setup table/page 65139 (`NBC Linkage` app-area field 65139, `NBC Feature::Linkage`); sales-status enum + tableexts 65140–65142 (Sales Header/Sales Inv. Header/Opportunity); codeunits 65141–65143 (Mgt/Reactions/Subscribers); pageexts 65143–65145 (Sales Order/Posted Sales Invoice/Opp Card); permset 65140; **API pages 65150–65151** (`NBC CRM API Sales Order`/`Sales Invoice`) |
+| 65111–65113 | Licensing permsets (`NBC CRM/CDS/Core License`, `#if APPSOURCE`) |
+| 65160–65182 | **Demo data**: dummy `NBC Demo Data` table (65160); 10 seeder codeunits 65161–65170; master `NBC Demo Data Mgt.` (65181); 10 import API pages 65171–65180 (each its own `demo<Feature>` API group); config-package helper `NBC Demo Config Package` (codeunit 65182) + `NBC Demo` permset (65182). MCP demo configs seeded via `NBC MCP Setup.SeedDemoConfigurations()` |
+| 65183–65193 | **Onboarding**: `NBC Wizard Step` enum (65183) + `NBC Assisted Setup` registration codeunit (65183); 10 per-feature Assisted Setup wizard pages 65184–65193; `NBC Onboarding` permset (65184). Each wizard enables its feature + offers a sample-data opt-in that calls the same `NBC Demo <Feature>.Import()` |
+| 69000–69007 | Test codeunits (own block; +69006 Linkage, +69007 Demo Data idempotency) |
 
 ## Key decisions
 
@@ -96,7 +96,7 @@ Tier 0–4 "what to build" README).
   posting/VAT/ledger are untouched. `Fulfilled` is a **manual** sales status (a fully posted order is deleted, so
   there is nothing to auto-flip) — see FEAT-LNK-001 Known Limitations.
 - **Tier 4 API pages (per the "full MS APIV2 clones" choice):** the two new API pages (`NBC CRM API Sales
-  Order`/`Sales Invoice`, 50150–50151, `APIGroup='pipeline'`) mirror Microsoft's APIV2 sales order/invoice **field
+  Order`/`Sales Invoice`, 65150–65151, `APIGroup='pipeline'`) mirror Microsoft's APIV2 sales order/invoice **field
   surface** but **source the base table directly** (`Sales Header`/`Sales Invoice Header`) — the same house practice
   as the Customer/Item clones — because MS's APIV2 pages bind a `Sales Order Entity Buffer` aggregate that is not a
   symbol dependency here. Document totals + MS sub-parts are omitted (documented). Order API is writable with
@@ -112,7 +112,7 @@ Tier 0–4 "what to build" README).
   All share a dummy `NBC Demo Data` source table; all in the `NBC Demo` permset (in the CRM license). Pattern +
   skill added to bc-dev-templates (`demo-data-and-import-apis.md`, `generate-demo-data`, feature-ready gate item).
 - **RapidStart Config. Package per feature, built only on demo-data opt-in.** Each seeder's `Import()` also builds a
-  standard **Config. Package** (via shared helper `NBC Demo Config Package`, codeunit 50182, over base
+  standard **Config. Package** (via shared helper `NBC Demo Config Package`, codeunit 65182, over base
   `Config. Package Management` 8611) — so a feature's package is created **only when the user imports that feature's
   demo data** (Assisted Setup opt-in or MCP `importDemoData`), never eager. 10 packages (`NBC-<FEATURE>`): own tables
   (all fields) + extended standard tables **narrowed to PK + affix fields** (FlowFields skipped); **the feature
@@ -134,7 +134,7 @@ Tier 0–4 "what to build" README).
   deprecated `Permission` table). `Feature Mgt.IsEnabled`
   guards each setup read the same way. See bc-dev-templates `event-subscribers.md`.
 - **The effective-permission check is now a swappable interface** — `NBC IAccessPolicy` + default impl
-  `NBC Access Policy` (50001), both granted via the Unlicensed `NBC Base Subscribers` set and resolved through
+  `NBC Access Policy` (65001), both granted via the Unlicensed `NBC Base Subscribers` set and resolved through
   `NBC Service Locator.AccessPolicy()` (`HasEffectiveExecute` / `HasEffectiveRead`, cached per session). This
   consolidated the check that was **duplicated** in the owner subscriber + `Feature Mgt.` into one place, and let the
   owner subscriber return to a **pure proxy** (no globals/helpers — the guard is now a one-line delegation). A
@@ -155,7 +155,7 @@ Tier 0–4 "what to build" README).
   invalid on a Price List Lines action (AL0482). Verify the image is valid for the control type.
 - **AppSourceCop** needs a complete `app.json` manifest (brief/description/URLs/logo — AS0051/AS0052) and the affix
   on pageext control/action/group identifiers (AS0011).
-- **Test object IDs** must not overlap app IDs across the dependency graph (AL0264) — hence the 50900 block.
+- **Test object IDs** must not overlap app IDs across the dependency graph (AL0264) — hence the 69000 block.
 - `User Setup` salesperson field is **`Salespers./Purch. Code`** (not "Salesperson Code").
 - Checking permission by instantiating your **own** object (`MyTable.ReadPermission()`) can itself error for an
   unlicensed user — check **effective** permission by object id through MS `Effective Permissions Mgt.` instead.
@@ -168,7 +168,7 @@ Tier 0–4 "what to build" README).
 
 ## Open gate items (run `feature-ready.md` before calling anything done)
 
-- ⬜ **Integration tests + actually running the suite** — only DB-free unit tests exist (50900–50906) and none have
+- ⬜ **Integration tests + actually running the suite** — only DB-free unit tests exist (69000–69006) and none have
   executed; wire up the `crm2802` test runner and add integration tests for DB-bound behavior (estimated-revenue
   roll-up, bundle component total, change-log audit, **Tier 4: invoice stamped with the opportunity on posting +
   opportunity order/invoice count roll-up**).
@@ -176,7 +176,7 @@ Tier 0–4 "what to build" README).
 - ⬜ **Build not yet run for 0.4.0.0 (Tier 4 + demo data + onboarding wizards)** — all objects were authored to the
   house patterns but `alc` was not available in the authoring session; compile both targets (PTE +
   `/define:APPSOURCE`) on `crm2802` and resolve any diagnostics before calling these gate-complete. **Highest-risk
-  spot to check first:** `NBC Assisted Setup` (50183) — the `Guided Experience.InsertAssistedSetup(...)` overload +
+  spot to check first:** `NBC Assisted Setup` (65183) — the `Guided Experience.InsertAssistedSetup(...)` overload +
   `"Assisted Setup Group"` enum value are version-sensitive; if the signature differs in 28.2, adjust that one call.
   Second: the wizard pages bind display `field(...)` sources directly to `Label` variables — if the compiler rejects
   that, swap each to a `Text` global assigned from the label.

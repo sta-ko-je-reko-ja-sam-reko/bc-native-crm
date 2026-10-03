@@ -23,9 +23,9 @@ duplicate finder (BC has none for customers).
 
 | Type | ID | Name |
 |---|---|---|
-| codeunit | 50080 | NBC Audit Mgt. |
-| codeunit | 50081 | NBC Duplicate Mgt. |
-| permissionset | 50080 | NBC Governance |
+| codeunit | 65080 | NBC Audit Mgt. |
+| codeunit | 65081 | NBC Duplicate Mgt. |
+| permissionset | 65080 | NBC Governance |
 
 Surfaced via the Role Center **Governance** actions (FEAT-RC-001): *Enable CRM audit logging*, *Find duplicate customers*.
 

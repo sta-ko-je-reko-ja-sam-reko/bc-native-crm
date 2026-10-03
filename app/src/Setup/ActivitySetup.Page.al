@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Activities and Timeline — turn the feature on or off.</summary>
-page 50131 "NBC Activity Setup"
+page 65131 "NBC Activity Setup"
 {
     PageType = Card;
     ApplicationArea = All;

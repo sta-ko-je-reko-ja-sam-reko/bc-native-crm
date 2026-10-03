@@ -9,7 +9,7 @@ using NBC.Dataverse.Activities;
 using NBC.Dataverse.Ownership;
 
 /// <summary>Line type on a CRM opportunity line.</summary>
-enum 50041 "NBC CRM Opp. Line Type"
+enum 65041 "NBC CRM Opp. Line Type"
 {
     Extensible = true;
     Caption = 'CRM Opp. Line Type';

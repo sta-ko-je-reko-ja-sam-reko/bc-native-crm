@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Administration setup for Opportunity Depth — turn the feature on or off.</summary>
-page 50133 "NBC Opportunity Setup"
+page 65133 "NBC Opportunity Setup"
 {
     PageType = Card;
     ApplicationArea = All;

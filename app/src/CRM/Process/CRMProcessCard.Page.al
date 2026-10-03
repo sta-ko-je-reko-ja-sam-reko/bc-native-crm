@@ -3,7 +3,7 @@ namespace NBC.CRM.Process;
 using Microsoft.CRM.Opportunity;
 
 /// <summary>Card for a CRM process and its stages.</summary>
-page 50061 "NBC CRM Process Card"
+page 65061 "NBC CRM Process Card"
 {
     PageType = Card;
     ApplicationArea = NBCProcess;

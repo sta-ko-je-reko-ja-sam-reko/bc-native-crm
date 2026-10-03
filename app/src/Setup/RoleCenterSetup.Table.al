@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Role Center feature.</summary>
-table 50135 "NBC Role Center Setup"
+table 65135 "NBC Role Center Setup"
 {
     Caption = 'Role Center Setup';
     DataClassification = CustomerContent;

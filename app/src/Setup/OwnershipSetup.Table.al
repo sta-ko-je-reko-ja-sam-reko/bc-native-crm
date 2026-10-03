@@ -1,7 +1,7 @@
 namespace NBC.Setup;
 
 /// <summary>Single-record setup for the Ownership and Teams feature.</summary>
-table 50130 "NBC Ownership Setup"
+table 65130 "NBC Ownership Setup"
 {
     Caption = 'Ownership Setup';
     DataClassification = CustomerContent;

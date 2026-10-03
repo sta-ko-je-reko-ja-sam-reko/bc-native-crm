@@ -1,7 +1,7 @@
 namespace NBC.CRM.Pricing;
 
 /// <summary>A reusable, quantity-banded discount list attachable to many price-list lines.</summary>
-table 50100 "NBC CRM Discount List"
+table 65100 "NBC CRM Discount List"
 {
     Caption = 'CRM Discount List';
     DataClassification = CustomerContent;

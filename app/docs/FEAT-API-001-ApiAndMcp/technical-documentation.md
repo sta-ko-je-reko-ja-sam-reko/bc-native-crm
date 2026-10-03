@@ -54,26 +54,26 @@ whole module as one MCP tool set. Buffer/cue tables are excluded per the rule's 
 
 | APIGroup | Entity set | Source table | Page |
 |---|---|---|---|
-| ownership | teams | NBC CDS Team | 50110 |
-| ownership | teamMembers | NBC CDS Team Member | 50111 |
-| activities | activities | NBC CDS Activity | 50112 |
-| opportunity | opportunityLines | NBC CRM Opp. Line | 50113 |
-| opportunity | opportunityCompetitors | NBC CRM Opp. Competitor | 50114 |
-| opportunity | opportunityStakeholders | NBC CRM Opp. Stakeholder | 50115 |
-| process | processes | NBC CRM Process | 50116 |
-| process | processStages | NBC CRM Process Stage | 50117 |
-| process | processStates | NBC CRM Process State | 50118 |
-| catalog | bundles | NBC CRM Bundle | 50119 |
-| catalog | bundleLines | NBC CRM Bundle Line | 50120 |
-| catalog | productRelations | NBC CRM Product Rel. | 50121 |
-| pricing | discountLists | NBC CRM Discount List | 50122 |
-| pricing | discountTiers | NBC CRM Discount Tier | 50123 |
-| party | customersCrm | Customer (extended) | 50124 |
-| party | contactsCrm | Contact (extended) | 50125 |
-| opportunity | opportunities | Opportunity (extended) | 50126 |
-| catalog | itemsCrm | Item (extended) | 50127 |
-| catalog | resourcesCrm | Resource (extended) | 50128 |
-| pricing | priceListLinesCrm | Price List Line (extended) | 50129 |
+| ownership | teams | NBC CDS Team | 65110 |
+| ownership | teamMembers | NBC CDS Team Member | 65111 |
+| activities | activities | NBC CDS Activity | 65112 |
+| opportunity | opportunityLines | NBC CRM Opp. Line | 65113 |
+| opportunity | opportunityCompetitors | NBC CRM Opp. Competitor | 65114 |
+| opportunity | opportunityStakeholders | NBC CRM Opp. Stakeholder | 65115 |
+| process | processes | NBC CRM Process | 65116 |
+| process | processStages | NBC CRM Process Stage | 65117 |
+| process | processStates | NBC CRM Process State | 65118 |
+| catalog | bundles | NBC CRM Bundle | 65119 |
+| catalog | bundleLines | NBC CRM Bundle Line | 65120 |
+| catalog | productRelations | NBC CRM Product Rel. | 65121 |
+| pricing | discountLists | NBC CRM Discount List | 65122 |
+| pricing | discountTiers | NBC CRM Discount Tier | 65123 |
+| party | customersCrm | Customer (extended) | 65124 |
+| party | contactsCrm | Contact (extended) | 65125 |
+| opportunity | opportunities | Opportunity (extended) | 65126 |
+| catalog | itemsCrm | Item (extended) | 65127 |
+| catalog | resourcesCrm | Resource (extended) | 65128 |
+| pricing | priceListLinesCrm | Price List Line (extended) | 65129 |
 
 OData shape: `/api/nbc/{apiGroup}/v1.0/companies({id})/{entitySet}`.
 
@@ -81,9 +81,9 @@ OData shape: `/api/nbc/{apiGroup}/v1.0/companies({id})/{entitySet}`.
 
 | Type | ID | Name |
 |---|---|---|
-| page (API) | 50110–50129 | 20 API pages (see table above) |
+| page (API) | 65110–65129 | 20 API pages (see table above) |
 
-> The MCP seed codeunit (`NBC MCP Setup`, 50110) is documented under [FEAT-MCP-001](../FEAT-MCP-001-MCPServer/technical-documentation.md).
+> The MCP seed codeunit (`NBC MCP Setup`, 65110) is documented under [FEAT-MCP-001](../FEAT-MCP-001-MCPServer/technical-documentation.md).
 
 Permission-set wiring: each API page is added (`page … = X`) to its module permission set — API Team/Team Member
 + Customer/Contact CRM → `NBC Foundation`; Activity → `NBC CDS Activities`; Opp. * + Opportunity → `NBC CRM Opp.`;

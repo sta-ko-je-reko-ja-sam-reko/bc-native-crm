@@ -4,7 +4,7 @@ namespace NBC.CRM.Catalog;
 /// A priced-as-one sellable package (the Dataverse bundle analog). Deliberately NOT a BOM/Assembly —
 /// those are manufacturable supply-chain structures, not catalog packages sold as a single line.
 /// </summary>
-table 50091 "NBC CRM Bundle"
+table 65091 "NBC CRM Bundle"
 {
     Caption = 'CRM Bundle';
     DataClassification = CustomerContent;

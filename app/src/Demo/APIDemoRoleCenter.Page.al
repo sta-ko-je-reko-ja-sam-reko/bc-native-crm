@@ -4,7 +4,7 @@ namespace NBC.Demo;
 /// Demo-import API for the Role Center feature. Its [ServiceEnabled] ImportDemoData action is the MCP tool; in its
 /// own API group (demoRoleCenter) so it can be routed to a dedicated MCP configuration / Copilot agent.
 /// </summary>
-page 50176 "NBC API Demo Role Center"
+page 65176 "NBC API Demo Role Center"
 {
     PageType = API;
     APIPublisher = 'nbc';

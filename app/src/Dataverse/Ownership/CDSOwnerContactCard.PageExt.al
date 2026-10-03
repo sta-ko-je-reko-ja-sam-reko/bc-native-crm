@@ -8,7 +8,7 @@ using NBC.Setup;
 using System.Security.User;
 
 /// <summary>Surfaces CRM ownership on the Contact Card (CRM group + CRM actions), gated by the Ownership feature.</summary>
-pageextension 50022 "NBC CDS Owner Contact Card" extends "Contact Card"
+pageextension 65022 "NBC CDS Owner Contact Card" extends "Contact Card"
 {
     layout
     {
