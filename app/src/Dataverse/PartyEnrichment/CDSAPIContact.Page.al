@@ -221,7 +221,7 @@ page 65125 "NBC CDS API Contact"
                     begin
                         if IsEnterpriseNumber(EnterpriseNoFieldRef) then begin
                             if (Rec."Country/Region Code" <> BECountryCodeLbl) and (Rec."Country/Region Code" <> '') then begin
-                                Rec.Validate("VAT Registration No.", TaxRegistrationNumber);
+                                Rec.Validate("VAT Registration No.", CopyStr(TaxRegistrationNumber, 1, MaxStrLen(Rec."VAT Registration No.")));
                                 RegisterFieldSet(Rec.FieldNo("VAT Registration No."));
                             end else begin
                                 EnterpriseNoFieldRef.Validate(TaxRegistrationNumber);
@@ -229,7 +229,7 @@ page 65125 "NBC CDS API Contact"
                                 RegisterFieldSet(Rec.FieldNo("VAT Registration No."));
                             end;
                         end else begin
-                            Rec.Validate("VAT Registration No.", TaxRegistrationNumber);
+                            Rec.Validate("VAT Registration No.", CopyStr(TaxRegistrationNumber, 1, MaxStrLen(Rec."VAT Registration No.")));
                             RegisterFieldSet(Rec.FieldNo("VAT Registration No."));
                         end;
                     end;

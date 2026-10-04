@@ -62,6 +62,37 @@ codeunit 69000 "NBC CDS Owner Mgt. Tests"
             Error('Expected ''TEAM-A'' but got ''%1''.', Result);
     end;
 
+    [Test]
+    procedure BuildOwnerCodeFilter_RespectsCallerFilter()
+    var
+        TempTeamMember: Record "NBC CDS Team Member" temporary;
+        OwnerMgt: Codeunit "NBC CDS Owner Mgt.";
+        Result: Text;
+    begin
+        // [GIVEN] memberships of two salespersons, filtered to SP01 by the caller
+        AddTempMembership(TempTeamMember, 'TEAM-A', 'SP01');
+        AddTempMembership(TempTeamMember, 'TEAM-B', 'SP02');
+        TempTeamMember.SetRange("Salesperson Code", 'SP01');
+
+        // [WHEN] building the filter
+        Result := OwnerMgt.BuildOwnerCodeFilter('SP01', TempTeamMember);
+
+        // [THEN] only SP01's team is included
+        if Result <> 'SP01|TEAM-A' then
+            Error('Expected ''SP01|TEAM-A'' but got ''%1''.', Result);
+    end;
+
+    [Test]
+    procedure BuildOwnerCodeFilter_NothingGivesEmpty()
+    var
+        TempTeamMember: Record "NBC CDS Team Member" temporary;
+        OwnerMgt: Codeunit "NBC CDS Owner Mgt.";
+    begin
+        // [GIVEN] no salesperson and no teams  [THEN] an empty filter (the caller shows nothing)
+        if OwnerMgt.BuildOwnerCodeFilter('', TempTeamMember) <> '' then
+            Error('Expected an empty filter.');
+    end;
+
     local procedure AddTempMembership(var TempTeamMember: Record "NBC CDS Team Member" temporary; TeamCode: Code[20]; SalespersonCode: Code[20])
     begin
         TempTeamMember.Init();

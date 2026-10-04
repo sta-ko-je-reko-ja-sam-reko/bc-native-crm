@@ -3,13 +3,14 @@
 The git-tracked source of truth for this project's state. It travels with the repo, so a future session on any
 machine (with no assistant memory) has the full picture. **Keep it current as work proceeds.**
 
-Last updated: 2026-07-03 · Version `0.4.0.0` · BC 28.2 · container `crm2802`.
+Last updated: 2026-10-04 · Version `0.4.0.0` · BC 28.2 target, built and tested against BC 29.0 · shared container `bc29loc`.
 
 ## What's built (all compiling green on `crm2802` symbols)
 
 Build targets: **PTE** (default, ships in 65000 range) and **AppSource** (`alc /define:APPSOURCE`, drops
-PerTenantExtensionCop, includes the `#if APPSOURCE` entitlements). Both `exit=0`; test app `exit=0`. Tests are
-**compiled but not yet run** (no container test runner wired up).
+PerTenantExtensionCop, includes the `#if APPSOURCE` entitlements). `tools\build.ps1` compiles app + test app against
+the local BC 29.0 artifact cache with all four analyzers; `tools\test.ps1` publishes both to the dev container and
+runs the suite (results in `.output\TestResults.xml`).
 
 | Tier / area | Features | Status |
 |---|---|---|
@@ -51,7 +52,9 @@ Tier 0–4 "what to build" README).
 | 65111–65113 | Licensing permsets (`NBC CRM/CDS/Core License`, `#if APPSOURCE`) |
 | 65160–65182 | **Demo data**: dummy `NBC Demo Data` table (65160); 10 seeder codeunits 65161–65170; master `NBC Demo Data Mgt.` (65181); 10 import API pages 65171–65180 (each its own `demo<Feature>` API group); config-package helper `NBC Demo Config Package` (codeunit 65182) + `NBC Demo` permset (65182). MCP demo configs seeded via `NBC MCP Setup.SeedDemoConfigurations()` |
 | 65183–65193 | **Onboarding**: `NBC Wizard Step` enum (65183) + `NBC Assisted Setup` registration codeunit (65183); 10 per-feature Assisted Setup wizard pages 65184–65193; `NBC Onboarding` permset (65184). Each wizard enables its feature + offers a sample-data opt-in that calls the same `NBC Demo <Feature>.Import()` |
-| 69000–69007 | Test codeunits (own block; +69006 Linkage, +69007 Demo Data idempotency) |
+| 69000–69007 | Unit test codeunits per feature (69007 = Demo Data Integration) |
+| 69010–69021 | `...Integration` test codeunits per feature + Feature Setup (69017) + Service Locator (69021) tests |
+| 69090–69097 | Test library (69090) and test doubles: fake access policy, spy reactions / logic implementations |
 
 ## Key decisions
 
@@ -168,18 +171,16 @@ Tier 0–4 "what to build" README).
 
 ## Open gate items (run `feature-ready.md` before calling anything done)
 
-- ⬜ **Integration tests + actually running the suite** — only DB-free unit tests exist (69000–69006) and none have
-  executed; wire up the `crm2802` test runner and add integration tests for DB-bound behavior (estimated-revenue
-  roll-up, bundle component total, change-log audit, **Tier 4: invoice stamped with the opportunity on posting +
-  opportunity order/invoice count roll-up**).
+- 🟨 **Integration tests + running the suite** — the test app now holds 173 tests in 20 test codeunits (unit +
+  `...Integration` per feature, see the ID map) and compiles clean against BC 29.0 (`tools\build.ps1`). Still open:
+  run it on the shared `bc29loc` container (`tools\test.ps1`) and fix whatever fails at runtime; then mark this ✅.
+  Not covered by automation (by design or platform limits): the setup wizards (their Finish restarts the session),
+  `ApplyExperienceChange` (dialog + session restart), the control add-ins, the API pages (need an HTTP/OData client),
+  the MCP configuration seeder and the Assisted Setup registration.
 - ⬜ **Telemetry on key transactions** (AppSource discipline).
-- ⬜ **Build not yet run for 0.4.0.0 (Tier 4 + demo data + onboarding wizards)** — all objects were authored to the
-  house patterns but `alc` was not available in the authoring session; compile both targets (PTE +
-  `/define:APPSOURCE`) on `crm2802` and resolve any diagnostics before calling these gate-complete. **Highest-risk
-  spot to check first:** `NBC Assisted Setup` (65183) — the `Guided Experience.InsertAssistedSetup(...)` overload +
-  `"Assisted Setup Group"` enum value are version-sensitive; if the signature differs in 28.2, adjust that one call.
-  Second: the wizard pages bind display `field(...)` sources directly to `Label` variables — if the compiler rejects
-  that, swap each to a `Text` global assigned from the label.
+- ✅ **Build for 0.4.0.0** — PTE build of app + test app is clean (0 errors, 0 warnings) against the BC 29.0 artifact
+  via `tools\build.ps1`. The AppSource build (`tools\build.ps1 -Target AppSource`) compiles with 3 AL0684 warnings on
+  the entitlements (permission sets referencing objects of other modules) — still to resolve before an AppSource build.
 - Note: base `CRM.g.xlf` is generated (TranslationFile on) — **regenerate it for the Tier 4 captions/labels** on the
   next build; no 2nd-language xlf (English-only, OK).
 

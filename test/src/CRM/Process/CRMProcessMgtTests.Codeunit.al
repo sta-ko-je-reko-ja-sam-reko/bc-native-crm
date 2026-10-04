@@ -28,6 +28,26 @@ codeunit 69003 "NBC CRM Process Mgt. Tests"
         AssertState(ProcessMgt.ComputeStageState(10, 0), 'todo', 'not started');
     end;
 
+    [Test]
+    procedure ComputeStageState_FirstStageCurrentOthersTodo()
+    var
+        ProcessMgt: Codeunit "NBC CRM Process Mgt.";
+    begin
+        // current stage = first stage (10): it is current, nothing is done yet
+        AssertState(ProcessMgt.ComputeStageState(10, 10), 'current', 'first stage');
+        AssertState(ProcessMgt.ComputeStageState(20, 10), 'todo', 'second stage');
+    end;
+
+    [Test]
+    procedure ComputeStageState_CurrentBeyondLastMarksAllDone()
+    var
+        ProcessMgt: Codeunit "NBC CRM Process Mgt.";
+    begin
+        // a current stage number beyond the defined stages (e.g. a deleted stage) marks every stage done
+        AssertState(ProcessMgt.ComputeStageState(10, 99), 'done', 'stage 10');
+        AssertState(ProcessMgt.ComputeStageState(40, 99), 'done', 'stage 40');
+    end;
+
     local procedure AssertState(Actual: Text; Expected: Text; Context: Text)
     begin
         if Actual <> Expected then
