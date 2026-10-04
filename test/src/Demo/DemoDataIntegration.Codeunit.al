@@ -198,6 +198,36 @@ codeunit 69007 "NBC Demo Data Integration"
     end;
 
     [Test]
+    procedure Linkage_ImportIsIdempotentWithoutDemoOpportunity()
+    var
+        Opportunity: Record Opportunity;
+        SalesHeader: Record "Sales Header";
+        DemoLinkage: Codeunit "NBC Demo Linkage";
+        OrdersAfterFirst: Integer;
+    begin
+        // [GIVEN] no demo opportunity NBC-OPP-001 and no demo orders yet (regression: the old guard keyed on the
+        // opportunity stamp, so unlinked demo orders were re-created on every run)
+        TestLibrary.Initialize();
+        if Opportunity.Get('NBC-OPP-001') then
+            Opportunity.Delete();
+        SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Order);
+        SalesHeader.SetRange("Your Reference", 'NBC-DEMO-LINKAGE');
+        SalesHeader.DeleteAll(true);
+        SalesHeader.SetRange("Your Reference");
+
+        // [WHEN] the linkage seeder runs twice
+        DemoLinkage.Import();
+        OrdersAfterFirst := SalesHeader.Count();
+        DemoLinkage.Import();
+
+        // [THEN] the second run creates no further orders, and the first run's orders are unlinked
+        Assert.AreEqual(OrdersAfterFirst, SalesHeader.Count(), 'Sales orders after the second run');
+        SalesHeader.SetRange("Your Reference", 'NBC-DEMO-LINKAGE');
+        SalesHeader.SetFilter("NBC CRM Opportunity No.", '<>%1', '');
+        Assert.RecordIsEmpty(SalesHeader);
+    end;
+
+    [Test]
     procedure SeedAllIsIdempotent()
     var
         DemoDataMgt: Codeunit "NBC Demo Data Mgt.";

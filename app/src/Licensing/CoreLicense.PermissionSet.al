@@ -16,6 +16,6 @@ permissionset 65113 "NBC Core License"
 
     IncludedPermissionSets =
         "NBC Foundation",
-        "NBC Governance";
+        "NBC Governance Obj";
 }
 #endif

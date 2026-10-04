@@ -171,7 +171,7 @@ Tier 0–4 "what to build" README).
 
 ## Open gate items (run `feature-ready.md` before calling anything done)
 
-- 🟨 **Integration tests + running the suite** — the test app now holds 173 tests in 20 test codeunits (unit +
+- 🟨 **Integration tests + running the suite** — the test app now holds 174 tests in 20 test codeunits (unit +
   `...Integration` per feature, see the ID map) and compiles clean against BC 29.0 (`tools\build.ps1`). Still open:
   run it on the shared `bc29loc` container (`tools\test.ps1`) and fix whatever fails at runtime; then mark this ✅.
   Not covered by automation (by design or platform limits): the setup wizards (their Finish restarts the session),
@@ -179,8 +179,9 @@ Tier 0–4 "what to build" README).
   the MCP configuration seeder and the Assisted Setup registration.
 - ⬜ **Telemetry on key transactions** (AppSource discipline).
 - ✅ **Build for 0.4.0.0** — PTE build of app + test app is clean (0 errors, 0 warnings) against the BC 29.0 artifact
-  via `tools\build.ps1`. The AppSource build (`tools\build.ps1 -Target AppSource`) compiles with 3 AL0684 warnings on
-  the entitlements (permission sets referencing objects of other modules) — still to resolve before an AppSource build.
+  via `tools\build.ps1`. The AppSource build (`tools\build.ps1 -Target AppSource`) is clean too: the entitlement-bound license sets
+  include only own-object building blocks (`NBC Governance Obj` 65081, `NBC Demo Obj` 65185), since an entitlement
+  ignores base-app permissions (AL0684); the assignable `NBC Governance` / `NBC Demo` sets add the base-app tables.
 - Note: base `CRM.g.xlf` is generated (TranslationFile on) — **regenerate it for the Tier 4 captions/labels** on the
   next build; no 2nd-language xlf (English-only, OK).
 
