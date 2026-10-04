@@ -28,9 +28,11 @@ codeunit 65170 "NBC Demo Linkage"
         Customer: Record Customer;
         OpportunityNo: Code[20];
     begin
-        // Idempotency: a no-series order has no stable natural key, so guard the whole seed on the demo
-        // opportunity stamp. If a prior run already created these orders, do nothing.
-        SalesHeader.SetRange("NBC CRM Opportunity No.", DemoOpportunityNo());
+        // Idempotency: a no-series order has no stable natural key, so every demo order carries a fixed
+        // "Your Reference" marker and the whole seed is guarded on it. The marker is independent of the demo
+        // opportunity, so re-running is a no-op even when NBC-OPP-001 is absent and the orders are unlinked.
+        SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Order);
+        SalesHeader.SetRange("Your Reference", DemoOrderReferenceTok);
         if not SalesHeader.IsEmpty() then
             exit;
 
@@ -84,6 +86,7 @@ codeunit 65170 "NBC Demo Linkage"
         // Stamp the CRM pipeline context. OpportunityNo may be blank if the demo opportunity is absent.
         SalesHeader."NBC CRM Opportunity No." := OpportunityNo;
         SalesHeader."NBC CRM Sales Status" := SalesStatus;
+        SalesHeader."Your Reference" := DemoOrderReferenceTok;
         SalesHeader.Modify(true);
     end;
 
@@ -146,4 +149,5 @@ codeunit 65170 "NBC Demo Linkage"
     var
         PackageCodeTok: Label 'NBC-LINKAGE', Locked = true;
         PackageNameLbl: Label 'CRM Pipeline Linkage';
+        DemoOrderReferenceTok: Label 'NBC-DEMO-LINKAGE', Locked = true;
 }

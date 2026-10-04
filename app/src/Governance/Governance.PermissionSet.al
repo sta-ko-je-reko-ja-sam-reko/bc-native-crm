@@ -1,20 +1,19 @@
 namespace NBC.Governance;
 
-using NBC.Setup;
 using System.Diagnostics;
 
-/// <summary>Permissions for the CRM governance (audit &amp; duplicate) objects.</summary>
+/// <summary>
+/// Permissions for the CRM governance (audit &amp; duplicate) feature: its own objects (via
+/// <see cref="NBC Governance Obj"/>) plus the base-app Change Log setup tables that enabling audit logging writes.
+/// </summary>
 permissionset 65080 "NBC Governance"
 {
     Caption = 'CRM Governance';
     Assignable = true;
 
+    IncludedPermissionSets = "NBC Governance Obj";
+
     Permissions =
         tabledata "Change Log Setup" = RIM,
-        tabledata "Change Log Setup (Table)" = RIM,
-        codeunit "NBC Audit Mgt." = X,
-        codeunit "NBC Duplicate Mgt." = X,
-        tabledata "NBC Governance Setup" = RIMD,
-        table "NBC Governance Setup" = X,
-        page "NBC Governance Setup" = X;
+        tabledata "Change Log Setup (Table)" = RIM;
 }

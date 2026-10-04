@@ -8,6 +8,16 @@
             "justification": "PTE 50K ID range — AppSource range validation not applicable."
         },
         {
+            "id": "AS0081",
+            "action": "Hidden",
+            "justification": "internalsVisibleTo exposes internal objects only to the project's own test app (CRM Tests), which is never deployed to production."
+        },
+        {
+            "id": "PTE0012",
+            "action": "Hidden",
+            "justification": "Same as AS0081: internalsVisibleTo is limited to the project's own test app."
+        },
+        {
             "id": "AA0214",
             "action": "Hidden",
             "justification": "Change the record before saving — not useful for our patterns."

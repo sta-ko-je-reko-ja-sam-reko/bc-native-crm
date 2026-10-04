@@ -29,7 +29,7 @@ permissionset 65111 "NBC CRM License"
         "NBC CRM Catalog",
         "NBC CRM Pricing",
         "NBC CRM Linkage",
-        "NBC Demo",
+        "NBC Demo Obj",
         "NBC Onboarding";
 }
 #endif
